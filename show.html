@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>detached</title>
+        <meta name="description" content="">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+       
+        <link rel="stylesheet" href="css/style.css">
+        <!--CDN BOOTSTRAP 4.3.1-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!--FONTS-->
+        
+   <!-- swipe start -->
+<script>
+$(document).ready(function(){
+    //Event for pushed the video
+    $('.carousel').carousel({
+        pause: true,
+        interval: false
+    });
+});
+$(document).ready(function(){
+
+
+var audio = document.getElementById("player");
+
+
+audio.muted = false;
+
+$("#live-button").click( function (){
+  if(audio.paused){
+    audio.play();
+    
+    
+   
+   
+    console.log('is playing');
+    $('.stop-icon').removeClass('invisible');
+    $('.play-icon').addClass('invisible');
+    
+  } else {
+    audio.pause();
+   
+    $('.play-icon').removeClass('invisible');
+    $('.stop-icon').addClass('invisible');
+    console.log('paused');
+    
+   
+  }
+});
+
+$("#sound-button").click( function (){
+  if(audio.muted){
+    
+    audio.volume = 1;
+   
+    console.log('volume 1');
+    $('.sound-icon').removeClass('invisible');
+    $('.mute-icon').addClass('invisible');
+    audio.muted = false;
+    
+  } else {
+    audio.volume = 0;
+    console.log('is Muted');
+    $('.mute-icon').removeClass('invisible');
+    $('.sound-icon').addClass('invisible');
+    audio.muted = true;
+    
+    
+  }
+});
+
+
+});
+
+  </script>
+  
+
+    </head>
+    <body>
+        <figure>
+            
+            <audio id="player"
+                controls
+                src="/audio/audio.mp3">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio>
+        </figure>
+
+        <div class="fixed-top light-mode">
+        <nav class="navbar navbar-expand-lg navbar-light detach-nav">
+            <a class="navbar-brand" href="#">Detached</a>
+            <button class="burger-button d-xl-none d-lg-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <img src="icons/menu.svg"/>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="nav-container-mobile">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">artists <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">shows</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">schedule</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">about</a>
+                </li>
+              </ul>
+            </div>
+           
+        </div>
+            <div class="d-none d-lg-block d-xl-block">
+            <form class="form-inline my-2 my-lg-0 ">
+                <button class="btn" type="submit"><img src="icons/search.svg"/></button>
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                
+              </form>
+            </div>
+            <div class="player d-none d-lg-block d-xl-block">
+                <button id="sound-button" class="stream-button">
+                <img class="sound-icon" src="icons/volume.svg"/>
+                <img class="mute-icon invisible" src="icons/mute.svg"/>
+                
+                </button>
+                <div class="slider-volume">
+                    <input type="range" min="0" max="10" value="7" step="1">
+                </div>
+                
+            </div>
+          </nav>
+          <div class="radio-container">
+              
+              <div class="row no-gutters ">
+                  <div class="col-lg-6  b-top">
+                   
+                    
+                    <div class="player" >
+                        <!--<span class="live-now">live now</span>-->
+                        <button id="live-button" class="stream-button">
+                        <img class="play-icon" src="icons/play.svg"/>
+                        <img class="stop-icon invisible" src="icons/pause.svg"/>
+                      </button>
+                      <span class="info-live">ryuichi sakamoto - wxaxrxp mix athens special</span></div>
+                      
+                    </div>
+                   
+                  
+
+                  <div class="col-lg-6 b-top">
+                    <a data-toggle="collapse" href="#schedule" role="button" aria-expanded="false" aria-controls="schedule">
+                    <div class="player-schedule">
+                        
+                        radio schedule
+                        <span class="expand-icon"><img src="icons/expand.svg"/></span>
+                    
+                    
+                    </div>
+                </a>
+                  
+                    
+                </div>
+               
+
+              </div>
+          </div>
+        </div>
+         
+        
+   
+
+       <div class="show-page">
+          
+
+        
+            <div class="row no-gutters">
+                <div class="col-lg-6">
+                    <div class="post-image" style="background-image: url('img/lorenzo.jpg')"></div>
+                    <div class="detach-hero-single">
+                        <div class="hero-category">
+                            experimental / trance  
+                        </div>
+                        <div class="hero-title">
+                            lorenzo senni selects h/c tracks  
+                        </div>
+                        <div class="hero-desc">
+                            <p>The conceptual sibling to his blinding 'Quantum Jelly' side for Editions Mego in 2012, 'Superimpositions' finds the Milan-based multi-disciplinary artist and owner of the brilliant Presto!? Records accelerating and evolving his idea of "Pointillistic Trance" - an ascetic, extreme approach to the aesthetics of '90s-style trance/hard-trance - in a broader range of song structures, hyper-lucid moiré patterns, and tantric dancefloor arrangements...</p>
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="mixcloud-player">
+                        <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FNTSRadio%2Fpowell-lorenzo-senni-in-conversation-w-rory-bowens-live-from-unsound-toronto-14th-july-2016%2F" frameborder="0" ></iframe>
+                       </div>
+                       
+                       <div class="tracklist-header">
+                       <h5>Tracklist</h5>
+                    </div>
+            
+                          <div class="track-list-master">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <a href="#">xyn cabal podcast from lebanon </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">LA ONDA W/ BANANA LEAF BOY & XOLO - 01.04.19 </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">hypermedium | dj set & live - 01.04.19</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">AWFUL RECORDS W/ DJ SPLASH - 26.06.19 </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">SELF AND OTHER TO THE LIGHTHOUSE - 080419 </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">HUDSON MOHAWKE - WXAXRXP MIX (WARP 30) - 22ND JUNE 2019 </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">COIL RADIO W/ GAVSBORG, SOCIAL FOX & WARREN SINCLAIR - 04.12.19 </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">FLOATING POINTS TAKEOVER W/ JAMIE XX, CARIBOU, MAFALDA, ELKKA, BEN UFO, LAYLA, MIDLAND, PEARSON SOUND, GE-OLOGY, SEIJI ONO & MORE </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">LEGENDS OF ALBANIAN SONG W/ GRUPI LAB - 10.10.19 </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">COMO LA FLOR W/ JAZMIN - 21.01.19 </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">KELMAN DURAN, FELIX HALL & FLORENTINO - 26.04.19 </a>
+                            </li> 
+                            <li class="list-group-item">
+                                <a href="#">DANIEL JOHNSTON: A TRIBUTE - 16TH SEPTEMBER 2019 </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">THE DO!! YOU!!! BREAKFAST SHOW W/ CHARLIE BONES </a>
+                            </li>  
+                            <li class="list-group-item">
+                                <a href="#">HUDSON MOHAWKE - WXAXRXP MIX (WARP 30) - 22ND JUNE 2019 </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">COIL RADIO W/ GAVSBORG, SOCIAL FOX & WARREN SINCLAIR - 04.12.19 </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">FLOATING POINTS TAKEOVER W/ JAMIE XX, CARIBOU, MAFALDA, ELKKA, BEN UFO, LAYLA, MIDLAND, PEARSON SOUND, GE-OLOGY, SEIJI ONO & MORE </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">LEGENDS OF ALBANIAN SONG W/ GRUPI LAB - 10.10.19 </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">COMO LA FLOR W/ JAZMIN - 21.01.19 </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">KELMAN DURAN, FELIX HALL & FLORENTINO - 26.04.19 </a>
+                            </li> 
+                            <li class="list-group-item">
+                                <a href="#">DANIEL JOHNSTON: A TRIBUTE - 16TH SEPTEMBER 2019 </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">THE DO!! YOU!!! BREAKFAST SHOW W/ CHARLIE BONES </a>
+                            </li>  
+                            <li class="list-group-item">
+                                <a href="#">LEGENDS OF ALBANIAN SONG W/ GRUPI LAB - 10.10.19 </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">COMO LA FLOR W/ JAZMIN - 21.01.19 </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">KELMAN DURAN, FELIX HALL & FLORENTINO - 26.04.19 </a>
+                            </li> 
+                            <li class="list-group-item">
+                                <a href="#">DANIEL JOHNSTON: A TRIBUTE - 16TH SEPTEMBER 2019 </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">THE DO!! YOU!!! BREAKFAST SHOW W/ CHARLIE BONES </a>
+                            </li>  
+                            <li class="list-group-item">
+                                <a href="#">HUDSON MOHAWKE - WXAXRXP MIX (WARP 30) - 22ND JUNE 2019 </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">COIL RADIO W/ GAVSBORG, SOCIAL FOX & WARREN SINCLAIR - 04.12.19 </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">FLOATING POINTS TAKEOVER W/ JAMIE XX, CARIBOU, MAFALDA, ELKKA, BEN UFO, LAYLA, MIDLAND, PEARSON SOUND, GE-OLOGY, SEIJI ONO & MORE </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">LEGENDS OF ALBANIAN SONG W/ GRUPI LAB - 10.10.19 </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">COMO LA FLOR W/ JAZMIN - 21.01.19 </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">KELMAN DURAN, FELIX HALL & FLORENTINO - 26.04.19 </a>
+                            </li> 
+                            <li class="list-group-item">
+                                <a href="#">DANIEL JOHNSTON: A TRIBUTE - 16TH SEPTEMBER 2019 </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">THE DO!! YOU!!! BREAKFAST SHOW W/ CHARLIE BONES </a>
+                            </li>  
+                            
+                            
+                          </ul>
+                        </div>
+                          
+                    </div>
+                
+              </div>
+               <!--Schedule Collapse Start-->
+          <div class="collapse " id="schedule">
+            <div class="schedule-container-parent">
+        <div class="container-fluid">
+        <div class="row b-bottom">
+            <h5>Schedule</h5>
+        </div>
+        <!--day row-->
+        <div class="row b-bottom">
+
+          <a class="detach-button" data-toggle="collapse" href="#day-1" role="button" aria-expanded="false" aria-controls="day-1">
+              MONDAY 2019-12-30
+            </a>
+           
+          </p>
+          <div class="collapse" id="day-1">
+            <div class="schedule-container">
+                <div class="row no-gutters">
+                    <div class="col-lg-3">
+                      
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">00:00 - 02:00</li>
+                          <li class="list-group-item">02:00 - 04:00</li>
+                          <li class="list-group-item">04:00 - 06:00</li>
+                          <li class="list-group-item">06:00 - 08:00</li>
+                          <li class="list-group-item">08:00 - 10:00</li>
+                          <li class="list-group-item">10:00 - 12:00</li>
+                          <li class="list-group-item">12:00 - 13:00</li>
+                          <li class="list-group-item">13:00 - 15:00</li>
+                          <li class="list-group-item">15:00 - 17:00</li>
+                          <li class="list-group-item">17:00 - 19:00</li>
+                          <li class="list-group-item">19:00 - 21:00</li>
+                          <li class="list-group-item">21:00 - 23:00</li>
+                          <li class="list-group-item">23:00 - 00:00</li>
+                          
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-9">
+                        
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                              <a href="#">xyn cabal podcast from lebanon </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">LA ONDA W/ BANANA LEAF BOY & XOLO - 01.04.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">hypermedium | dj set & live - 01.04.19</a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">AWFUL RECORDS W/ DJ SPLASH - 26.06.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">SELF AND OTHER TO THE LIGHTHOUSE - 080419 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">HUDSON MOHAWKE - WXAXRXP MIX (WARP 30) - 22ND JUNE 2019 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">COIL RADIO W/ GAVSBORG, SOCIAL FOX & WARREN SINCLAIR - 04.12.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">FLOATING POINTS TAKEOVER W/ JAMIE XX, CARIBOU, MAFALDA, ELKKA, BEN UFO, LAYLA, MIDLAND, PEARSON SOUND, GE-OLOGY, SEIJI ONO & MORE </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">LEGENDS OF ALBANIAN SONG W/ GRUPI LAB - 10.10.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">COMO LA FLOR W/ JAZMIN - 21.01.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">KELMAN DURAN, FELIX HALL & FLORENTINO - 26.04.19 </a>
+                          </li> 
+                          <li class="list-group-item">
+                              <a href="#">DANIEL JOHNSTON: A TRIBUTE - 16TH SEPTEMBER 2019 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">THE DO!! YOU!!! BREAKFAST SHOW W/ CHARLIE BONES </a>
+                          </li>  
+                          
+                          
+                        </ul>
+                        
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!--day row END-->
+        <!--day row-->
+        <div class="row b-bottom">
+
+          <a class="detach-button" data-toggle="collapse" href="#day-2" role="button" aria-expanded="false" aria-controls="day-2">
+              TUESDAY 2019-12-31
+            </a>
+           
+          </p>
+          <div class="collapse" id="day-2">
+            <div class="schedule-container">
+                <div class="row no-gutters">
+                    <div class="col-lg-3">
+                      
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">00:00 - 02:00</li>
+                          <li class="list-group-item">02:00 - 04:00</li>
+                          <li class="list-group-item">04:00 - 06:00</li>
+                          <li class="list-group-item">06:00 - 08:00</li>
+                          <li class="list-group-item">08:00 - 10:00</li>
+                          <li class="list-group-item">10:00 - 12:00</li>
+                          <li class="list-group-item">12:00 - 13:00</li>
+                          <li class="list-group-item">13:00 - 15:00</li>
+                          <li class="list-group-item">15:00 - 17:00</li>
+                          <li class="list-group-item">17:00 - 19:00</li>
+                          <li class="list-group-item">19:00 - 21:00</li>
+                          <li class="list-group-item">21:00 - 23:00</li>
+                          <li class="list-group-item">23:00 - 00:00</li>
+                          
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-9">
+                        
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                              <a href="#">xyn cabal podcast from lebanon </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">LA ONDA W/ BANANA LEAF BOY & XOLO - 01.04.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">hypermedium | dj set & live - 01.04.19</a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">AWFUL RECORDS W/ DJ SPLASH - 26.06.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">SELF AND OTHER TO THE LIGHTHOUSE - 080419 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">HUDSON MOHAWKE - WXAXRXP MIX (WARP 30) - 22ND JUNE 2019 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">COIL RADIO W/ GAVSBORG, SOCIAL FOX & WARREN SINCLAIR - 04.12.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">FLOATING POINTS TAKEOVER W/ JAMIE XX, CARIBOU, MAFALDA, ELKKA, BEN UFO, LAYLA, MIDLAND, PEARSON SOUND, GE-OLOGY, SEIJI ONO & MORE </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">LEGENDS OF ALBANIAN SONG W/ GRUPI LAB - 10.10.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">COMO LA FLOR W/ JAZMIN - 21.01.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">KELMAN DURAN, FELIX HALL & FLORENTINO - 26.04.19 </a>
+                          </li> 
+                          <li class="list-group-item">
+                              <a href="#">DANIEL JOHNSTON: A TRIBUTE - 16TH SEPTEMBER 2019 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">THE DO!! YOU!!! BREAKFAST SHOW W/ CHARLIE BONES </a>
+                          </li>  
+                          
+                          
+                        </ul>
+                        
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!--day row END-->
+         <!--day row-->
+         <div class="row b-bottom">
+
+          <a class="detach-button" data-toggle="collapse" href="#day-3" role="button" aria-expanded="false" aria-controls="day-3">
+              WEDNESDAY 2020-01-01
+            </a>
+           
+          </p>
+          <div class="collapse" id="day-3">
+            <div class="schedule-container">
+                <div class="row no-gutters">
+                    <div class="col-lg-3">
+                      
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">00:00 - 02:00</li>
+                          <li class="list-group-item">02:00 - 04:00</li>
+                          <li class="list-group-item">04:00 - 06:00</li>
+                          <li class="list-group-item">06:00 - 08:00</li>
+                          <li class="list-group-item">08:00 - 10:00</li>
+                          <li class="list-group-item">10:00 - 12:00</li>
+                          <li class="list-group-item">12:00 - 13:00</li>
+                          <li class="list-group-item">13:00 - 15:00</li>
+                          <li class="list-group-item">15:00 - 17:00</li>
+                          <li class="list-group-item">17:00 - 19:00</li>
+                          <li class="list-group-item">19:00 - 21:00</li>
+                          <li class="list-group-item">21:00 - 23:00</li>
+                          <li class="list-group-item">23:00 - 00:00</li>
+                          
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-9">
+                        
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                              <a href="#">xyn cabal podcast from lebanon </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">LA ONDA W/ BANANA LEAF BOY & XOLO - 01.04.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">hypermedium | dj set & live - 01.04.19</a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">AWFUL RECORDS W/ DJ SPLASH - 26.06.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">SELF AND OTHER TO THE LIGHTHOUSE - 080419 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">HUDSON MOHAWKE - WXAXRXP MIX (WARP 30) - 22ND JUNE 2019 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">COIL RADIO W/ GAVSBORG, SOCIAL FOX & WARREN SINCLAIR - 04.12.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">FLOATING POINTS TAKEOVER W/ JAMIE XX, CARIBOU, MAFALDA, ELKKA, BEN UFO, LAYLA, MIDLAND, PEARSON SOUND, GE-OLOGY, SEIJI ONO & MORE </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">LEGENDS OF ALBANIAN SONG W/ GRUPI LAB - 10.10.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">COMO LA FLOR W/ JAZMIN - 21.01.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">KELMAN DURAN, FELIX HALL & FLORENTINO - 26.04.19 </a>
+                          </li> 
+                          <li class="list-group-item">
+                              <a href="#">DANIEL JOHNSTON: A TRIBUTE - 16TH SEPTEMBER 2019 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">THE DO!! YOU!!! BREAKFAST SHOW W/ CHARLIE BONES </a>
+                          </li>  
+                          
+                          
+                        </ul>
+                        
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!--day row END-->
+         <!--day row-->
+         <div class="row b-bottom">
+
+          <a class="detach-button" data-toggle="collapse" href="#day-4" role="button" aria-expanded="false" aria-controls="day-4">
+              THURSDAY 2020-01-02
+            </a>
+           
+          </p>
+          <div class="collapse" id="day-4">
+            <div class="schedule-container">
+                <div class="row no-gutters">
+                    <div class="col-lg-3">
+                      
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">00:00 - 02:00</li>
+                          <li class="list-group-item">02:00 - 04:00</li>
+                          <li class="list-group-item">04:00 - 06:00</li>
+                          <li class="list-group-item">06:00 - 08:00</li>
+                          <li class="list-group-item">08:00 - 10:00</li>
+                          <li class="list-group-item">10:00 - 12:00</li>
+                          <li class="list-group-item">12:00 - 13:00</li>
+                          <li class="list-group-item">13:00 - 15:00</li>
+                          <li class="list-group-item">15:00 - 17:00</li>
+                          <li class="list-group-item">17:00 - 19:00</li>
+                          <li class="list-group-item">19:00 - 21:00</li>
+                          <li class="list-group-item">21:00 - 23:00</li>
+                          <li class="list-group-item">23:00 - 00:00</li>
+                          
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-9">
+                        
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                              <a href="#">xyn cabal podcast from lebanon </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">LA ONDA W/ BANANA LEAF BOY & XOLO - 01.04.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">hypermedium | dj set & live - 01.04.19</a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">AWFUL RECORDS W/ DJ SPLASH - 26.06.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">SELF AND OTHER TO THE LIGHTHOUSE - 080419 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">HUDSON MOHAWKE - WXAXRXP MIX (WARP 30) - 22ND JUNE 2019 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">COIL RADIO W/ GAVSBORG, SOCIAL FOX & WARREN SINCLAIR - 04.12.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">FLOATING POINTS TAKEOVER W/ JAMIE XX, CARIBOU, MAFALDA, ELKKA, BEN UFO, LAYLA, MIDLAND, PEARSON SOUND, GE-OLOGY, SEIJI ONO & MORE </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">LEGENDS OF ALBANIAN SONG W/ GRUPI LAB - 10.10.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">COMO LA FLOR W/ JAZMIN - 21.01.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">KELMAN DURAN, FELIX HALL & FLORENTINO - 26.04.19 </a>
+                          </li> 
+                          <li class="list-group-item">
+                              <a href="#">DANIEL JOHNSTON: A TRIBUTE - 16TH SEPTEMBER 2019 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">THE DO!! YOU!!! BREAKFAST SHOW W/ CHARLIE BONES </a>
+                          </li>  
+                          
+                          
+                        </ul>
+                        
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!--day row END-->
+         <!--day row-->
+         <div class="row b-bottom">
+
+          <a class="detach-button" data-toggle="collapse" href="#day-5" role="button" aria-expanded="false" aria-controls="day-5">
+              FRIDAY 2020-01-03
+            </a>
+           
+          </p>
+          <div class="collapse" id="day-5">
+            <div class="schedule-container">
+                <div class="row no-gutters">
+                    <div class="col-lg-3">
+                      
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">00:00 - 02:00</li>
+                          <li class="list-group-item">02:00 - 04:00</li>
+                          <li class="list-group-item">04:00 - 06:00</li>
+                          <li class="list-group-item">06:00 - 08:00</li>
+                          <li class="list-group-item">08:00 - 10:00</li>
+                          <li class="list-group-item">10:00 - 12:00</li>
+                          <li class="list-group-item">12:00 - 13:00</li>
+                          <li class="list-group-item">13:00 - 15:00</li>
+                          <li class="list-group-item">15:00 - 17:00</li>
+                          <li class="list-group-item">17:00 - 19:00</li>
+                          <li class="list-group-item">19:00 - 21:00</li>
+                          <li class="list-group-item">21:00 - 23:00</li>
+                          <li class="list-group-item">23:00 - 00:00</li>
+                          
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-9">
+                        
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                              <a href="#">xyn cabal podcast from lebanon </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">LA ONDA W/ BANANA LEAF BOY & XOLO - 01.04.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">hypermedium | dj set & live - 01.04.19</a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">AWFUL RECORDS W/ DJ SPLASH - 26.06.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">SELF AND OTHER TO THE LIGHTHOUSE - 080419 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">HUDSON MOHAWKE - WXAXRXP MIX (WARP 30) - 22ND JUNE 2019 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">COIL RADIO W/ GAVSBORG, SOCIAL FOX & WARREN SINCLAIR - 04.12.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">FLOATING POINTS TAKEOVER W/ JAMIE XX, CARIBOU, MAFALDA, ELKKA, BEN UFO, LAYLA, MIDLAND, PEARSON SOUND, GE-OLOGY, SEIJI ONO & MORE </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">LEGENDS OF ALBANIAN SONG W/ GRUPI LAB - 10.10.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">COMO LA FLOR W/ JAZMIN - 21.01.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">KELMAN DURAN, FELIX HALL & FLORENTINO - 26.04.19 </a>
+                          </li> 
+                          <li class="list-group-item">
+                              <a href="#">DANIEL JOHNSTON: A TRIBUTE - 16TH SEPTEMBER 2019 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">THE DO!! YOU!!! BREAKFAST SHOW W/ CHARLIE BONES </a>
+                          </li>  
+                          
+                          
+                        </ul>
+                        
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!--day row END-->
+         <!--day row-->
+         <div class="row b-bottom">
+
+          <a class="detach-button" data-toggle="collapse" href="#day-6" role="button" aria-expanded="false" aria-controls="day-6">
+              SATURDAY 2020-01-04
+            </a>
+           
+          </p>
+          <div class="collapse" id="day-6">
+            <div class="schedule-container">
+                <div class="row no-gutters">
+                    <div class="col-lg-3">
+                      
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">00:00 - 02:00</li>
+                          <li class="list-group-item">02:00 - 04:00</li>
+                          <li class="list-group-item">04:00 - 06:00</li>
+                          <li class="list-group-item">06:00 - 08:00</li>
+                          <li class="list-group-item">08:00 - 10:00</li>
+                          <li class="list-group-item">10:00 - 12:00</li>
+                          <li class="list-group-item">12:00 - 13:00</li>
+                          <li class="list-group-item">13:00 - 15:00</li>
+                          <li class="list-group-item">15:00 - 17:00</li>
+                          <li class="list-group-item">17:00 - 19:00</li>
+                          <li class="list-group-item">19:00 - 21:00</li>
+                          <li class="list-group-item">21:00 - 23:00</li>
+                          <li class="list-group-item">23:00 - 00:00</li>
+                          
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-9">
+                        
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                              <a href="#">xyn cabal podcast from lebanon </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">LA ONDA W/ BANANA LEAF BOY & XOLO - 01.04.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">hypermedium | dj set & live - 01.04.19</a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">AWFUL RECORDS W/ DJ SPLASH - 26.06.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">SELF AND OTHER TO THE LIGHTHOUSE - 080419 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">HUDSON MOHAWKE - WXAXRXP MIX (WARP 30) - 22ND JUNE 2019 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">COIL RADIO W/ GAVSBORG, SOCIAL FOX & WARREN SINCLAIR - 04.12.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">FLOATING POINTS TAKEOVER W/ JAMIE XX, CARIBOU, MAFALDA, ELKKA, BEN UFO, LAYLA, MIDLAND, PEARSON SOUND, GE-OLOGY, SEIJI ONO & MORE </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">LEGENDS OF ALBANIAN SONG W/ GRUPI LAB - 10.10.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">COMO LA FLOR W/ JAZMIN - 21.01.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">KELMAN DURAN, FELIX HALL & FLORENTINO - 26.04.19 </a>
+                          </li> 
+                          <li class="list-group-item">
+                              <a href="#">DANIEL JOHNSTON: A TRIBUTE - 16TH SEPTEMBER 2019 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">THE DO!! YOU!!! BREAKFAST SHOW W/ CHARLIE BONES </a>
+                          </li>  
+                          
+                          
+                        </ul>
+                        
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!--day row END-->
+         <!--day row-->
+         <div class="row b-bottom">
+
+          <a class="detach-button" data-toggle="collapse" href="#day-7" role="button" aria-expanded="false" aria-controls="day-7">
+              SUNDAY 2020-01-05
+            </a>
+           
+          </p>
+          <div class="collapse" id="day-7">
+            <div class="schedule-container">
+                <div class="row no-gutters">
+                    <div class="col-lg-3">
+                      
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">00:00 - 02:00</li>
+                          <li class="list-group-item">02:00 - 04:00</li>
+                          <li class="list-group-item">04:00 - 06:00</li>
+                          <li class="list-group-item">06:00 - 08:00</li>
+                          <li class="list-group-item">08:00 - 10:00</li>
+                          <li class="list-group-item">10:00 - 12:00</li>
+                          <li class="list-group-item">12:00 - 13:00</li>
+                          <li class="list-group-item">13:00 - 15:00</li>
+                          <li class="list-group-item">15:00 - 17:00</li>
+                          <li class="list-group-item">17:00 - 19:00</li>
+                          <li class="list-group-item">19:00 - 21:00</li>
+                          <li class="list-group-item">21:00 - 23:00</li>
+                          <li class="list-group-item">23:00 - 00:00</li>
+                          
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-9">
+                        
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                              <a href="#">xyn cabal podcast from lebanon </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">LA ONDA W/ BANANA LEAF BOY & XOLO - 01.04.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">hypermedium | dj set & live - 01.04.19</a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">AWFUL RECORDS W/ DJ SPLASH - 26.06.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">SELF AND OTHER TO THE LIGHTHOUSE - 080419 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">HUDSON MOHAWKE - WXAXRXP MIX (WARP 30) - 22ND JUNE 2019 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">COIL RADIO W/ GAVSBORG, SOCIAL FOX & WARREN SINCLAIR - 04.12.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">FLOATING POINTS TAKEOVER W/ JAMIE XX, CARIBOU, MAFALDA, ELKKA, BEN UFO, LAYLA, MIDLAND, PEARSON SOUND, GE-OLOGY, SEIJI ONO & MORE </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">LEGENDS OF ALBANIAN SONG W/ GRUPI LAB - 10.10.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">COMO LA FLOR W/ JAZMIN - 21.01.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">KELMAN DURAN, FELIX HALL & FLORENTINO - 26.04.19 </a>
+                          </li> 
+                          <li class="list-group-item">
+                              <a href="#">DANIEL JOHNSTON: A TRIBUTE - 16TH SEPTEMBER 2019 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">THE DO!! YOU!!! BREAKFAST SHOW W/ CHARLIE BONES </a>
+                          </li>  
+                          
+                          
+                        </ul>
+                        
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!--day row END-->
+         <!--day row-->
+         <div class="row b-bottom">
+
+          <a class="detach-button" data-toggle="collapse" href="#day-8" role="button" aria-expanded="false" aria-controls="day-8">
+              MONDAY 2020-01-06
+            </a>
+           
+          </p>
+          <div class="collapse" id="day-8">
+            <div class="schedule-container">
+                <div class="row no-gutters">
+                    <div class="col-lg-3">
+                      
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">00:00 - 02:00</li>
+                          <li class="list-group-item">02:00 - 04:00</li>
+                          <li class="list-group-item">04:00 - 06:00</li>
+                          <li class="list-group-item">06:00 - 08:00</li>
+                          <li class="list-group-item">08:00 - 10:00</li>
+                          <li class="list-group-item">10:00 - 12:00</li>
+                          <li class="list-group-item">12:00 - 13:00</li>
+                          <li class="list-group-item">13:00 - 15:00</li>
+                          <li class="list-group-item">15:00 - 17:00</li>
+                          <li class="list-group-item">17:00 - 19:00</li>
+                          <li class="list-group-item">19:00 - 21:00</li>
+                          <li class="list-group-item">21:00 - 23:00</li>
+                          <li class="list-group-item">23:00 - 00:00</li>
+                          
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-9">
+                        
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                              <a href="#">xyn cabal podcast from lebanon </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">LA ONDA W/ BANANA LEAF BOY & XOLO - 01.04.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">hypermedium | dj set & live - 01.04.19</a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">AWFUL RECORDS W/ DJ SPLASH - 26.06.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">SELF AND OTHER TO THE LIGHTHOUSE - 080419 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">HUDSON MOHAWKE - WXAXRXP MIX (WARP 30) - 22ND JUNE 2019 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">COIL RADIO W/ GAVSBORG, SOCIAL FOX & WARREN SINCLAIR - 04.12.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">FLOATING POINTS TAKEOVER W/ JAMIE XX, CARIBOU, MAFALDA, ELKKA, BEN UFO, LAYLA, MIDLAND, PEARSON SOUND, GE-OLOGY, SEIJI ONO & MORE </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">LEGENDS OF ALBANIAN SONG W/ GRUPI LAB - 10.10.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">COMO LA FLOR W/ JAZMIN - 21.01.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">KELMAN DURAN, FELIX HALL & FLORENTINO - 26.04.19 </a>
+                          </li> 
+                          <li class="list-group-item">
+                              <a href="#">DANIEL JOHNSTON: A TRIBUTE - 16TH SEPTEMBER 2019 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">THE DO!! YOU!!! BREAKFAST SHOW W/ CHARLIE BONES </a>
+                          </li>  
+                          
+                          
+                        </ul>
+                        
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!--day row END-->
+         <!--day row-->
+         <div class="row b-bottom">
+
+          <a class="detach-button" data-toggle="collapse" href="#day-9" role="button" aria-expanded="false" aria-controls="day-9">
+              TUESDAY 2019-12-31
+            </a>
+           
+          </p>
+          <div class="collapse" id="day-9">
+            <div class="schedule-container">
+                <div class="row no-gutters">
+                    <div class="col-lg-3">
+                      
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">00:00 - 02:00</li>
+                          <li class="list-group-item">02:00 - 04:00</li>
+                          <li class="list-group-item">04:00 - 06:00</li>
+                          <li class="list-group-item">06:00 - 08:00</li>
+                          <li class="list-group-item">08:00 - 10:00</li>
+                          <li class="list-group-item">10:00 - 12:00</li>
+                          <li class="list-group-item">12:00 - 13:00</li>
+                          <li class="list-group-item">13:00 - 15:00</li>
+                          <li class="list-group-item">15:00 - 17:00</li>
+                          <li class="list-group-item">17:00 - 19:00</li>
+                          <li class="list-group-item">19:00 - 21:00</li>
+                          <li class="list-group-item">21:00 - 23:00</li>
+                          <li class="list-group-item">23:00 - 00:00</li>
+                          
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-9">
+                        
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                              <a href="#">xyn cabal podcast from lebanon </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">LA ONDA W/ BANANA LEAF BOY & XOLO - 01.04.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">hypermedium | dj set & live - 01.04.19</a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">AWFUL RECORDS W/ DJ SPLASH - 26.06.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">SELF AND OTHER TO THE LIGHTHOUSE - 080419 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">HUDSON MOHAWKE - WXAXRXP MIX (WARP 30) - 22ND JUNE 2019 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">COIL RADIO W/ GAVSBORG, SOCIAL FOX & WARREN SINCLAIR - 04.12.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">FLOATING POINTS TAKEOVER W/ JAMIE XX, CARIBOU, MAFALDA, ELKKA, BEN UFO, LAYLA, MIDLAND, PEARSON SOUND, GE-OLOGY, SEIJI ONO & MORE </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">LEGENDS OF ALBANIAN SONG W/ GRUPI LAB - 10.10.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">COMO LA FLOR W/ JAZMIN - 21.01.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">KELMAN DURAN, FELIX HALL & FLORENTINO - 26.04.19 </a>
+                          </li> 
+                          <li class="list-group-item">
+                              <a href="#">DANIEL JOHNSTON: A TRIBUTE - 16TH SEPTEMBER 2019 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">THE DO!! YOU!!! BREAKFAST SHOW W/ CHARLIE BONES </a>
+                          </li>  
+                          
+                          
+                        </ul>
+                        
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!--day row END-->
+         <!--day row-->
+         <div class="row b-bottom">
+
+          <a class="detach-button" data-toggle="collapse" href="#day-10" role="button" aria-expanded="false" aria-controls="day-10">
+              WEDNESDAY 2020-01-01
+            </a>
+           
+          </p>
+          <div class="collapse" id="day-10">
+            <div class="schedule-container">
+                <div class="row no-gutters">
+                    <div class="col-lg-3">
+                      
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">00:00 - 02:00</li>
+                          <li class="list-group-item">02:00 - 04:00</li>
+                          <li class="list-group-item">04:00 - 06:00</li>
+                          <li class="list-group-item">06:00 - 08:00</li>
+                          <li class="list-group-item">08:00 - 10:00</li>
+                          <li class="list-group-item">10:00 - 12:00</li>
+                          <li class="list-group-item">12:00 - 13:00</li>
+                          <li class="list-group-item">13:00 - 15:00</li>
+                          <li class="list-group-item">15:00 - 17:00</li>
+                          <li class="list-group-item">17:00 - 19:00</li>
+                          <li class="list-group-item">19:00 - 21:00</li>
+                          <li class="list-group-item">21:00 - 23:00</li>
+                          <li class="list-group-item">23:00 - 00:00</li>
+                          
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-9">
+                        
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                              <a href="#">xyn cabal podcast from lebanon </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">LA ONDA W/ BANANA LEAF BOY & XOLO - 01.04.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">hypermedium | dj set & live - 01.04.19</a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">AWFUL RECORDS W/ DJ SPLASH - 26.06.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">SELF AND OTHER TO THE LIGHTHOUSE - 080419 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">HUDSON MOHAWKE - WXAXRXP MIX (WARP 30) - 22ND JUNE 2019 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">COIL RADIO W/ GAVSBORG, SOCIAL FOX & WARREN SINCLAIR - 04.12.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">FLOATING POINTS TAKEOVER W/ JAMIE XX, CARIBOU, MAFALDA, ELKKA, BEN UFO, LAYLA, MIDLAND, PEARSON SOUND, GE-OLOGY, SEIJI ONO & MORE </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">LEGENDS OF ALBANIAN SONG W/ GRUPI LAB - 10.10.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">COMO LA FLOR W/ JAZMIN - 21.01.19 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">KELMAN DURAN, FELIX HALL & FLORENTINO - 26.04.19 </a>
+                          </li> 
+                          <li class="list-group-item">
+                              <a href="#">DANIEL JOHNSTON: A TRIBUTE - 16TH SEPTEMBER 2019 </a>
+                          </li>
+                          <li class="list-group-item">
+                              <a href="#">THE DO!! YOU!!! BREAKFAST SHOW W/ CHARLIE BONES </a>
+                          </li>  
+                          
+                          
+                        </ul>
+                        
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!--day row END-->
+        
+     </div>
+     </div>
+  </div>
+     <!--Schedule Collapse end-->
+
+            </div>
+          
+        
+        
+          
+       
+  
+      
+
+    </body>
+    </html>

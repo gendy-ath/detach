@@ -1,0 +1,11 @@
+{
+  "name": "radio-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/lr-http-server "
+  },
+  "author": "",
+  "license": "ISC"
+}
