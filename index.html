@@ -128,22 +128,12 @@ $("#sound-button").click( function (){
                 
               </form>
             </div>
-            <div class="player d-none d-lg-block d-xl-block">
-                <button id="sound-button" class="stream-button">
-                <img class="sound-icon" src="icons/volume.svg"/>
-                <img class="mute-icon invisible" src="icons/mute.svg"/>
-                
-                </button>
-                <div class="slider-volume">
-                    <input type="range" min="0" max="10" value="7" step="1">
-                </div>
-                
-            </div>
+           
           </nav>
           <div class="radio-container">
               
               <div class="row no-gutters ">
-                  <div class="col-lg-6  b-top">
+                  <div class="col-lg-12  b-top">
                    
                     
                     <div class="player" >
@@ -152,25 +142,20 @@ $("#sound-button").click( function (){
                         <img class="play-icon" src="icons/play.svg"/>
                         <img class="stop-icon invisible" src="icons/pause.svg"/>
                       </button>
-                      <span class="info-live">ryuichi sakamoto - wxaxrxp mix athens special</span></div>
-                      
+                      <button id="sound-button" class="stream-button">
+                        <img class="sound-icon" src="icons/volume.svg"/>
+                        <img class="mute-icon invisible" src="icons/mute.svg"/>
+                        
+                        </button>
+                        <span class="info-live">ryuichi sakamoto - wxaxrxp mix athens special</span>
+
+                    </div>
+                    
+                    
                     </div>
                    
                   
 
-                  <div class="col-lg-6 b-top">
-                    <a data-toggle="collapse" href="#schedule" role="button" aria-expanded="false" aria-controls="schedule">
-                    <div class="player-schedule">
-                        
-                        radio schedule
-                        <span class="expand-icon"><img src="icons/expand.svg"/></span>
-                    
-                    
-                    </div>
-                </a>
-                  
-                    
-                </div>
                
 
               </div>
@@ -178,6 +163,7 @@ $("#sound-button").click( function (){
         </div>
 
        <div class="home-page">
+        
            <!--carousel start-->
         <div class="bd-example">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -245,175 +231,311 @@ $("#sound-button").click( function (){
             </div>
           </div>
             <!--carousel end-->
+            
 
           <!--Schedule Collapse Start-->
-          <div class="collapse " id="schedule">
-              <div class="schedule-container-parent">
-          <div class="container-fluid">
-          <div class="row b-bottom">
+          
+          <div class="container-fluid section-schedule">
+          <div class="row b-bottom sticky-top sticky-offset headline">
               <h5>Schedule</h5>
           </div>
+
           <!--day row-->
           <div class="row b-bottom">
 
             <a class="detach-button" data-toggle="collapse" href="#day-1" role="button" aria-expanded="false" aria-controls="day-1">
-                MONDAY 2019-12-30
+                MONDAY <br/>
+                <span class="date">30 / 12 / 2019</span>
               </a>
              
             </p>
             <div class="collapse" id="day-1">
               <div class="schedule-container">
                   <div class="row no-gutters">
-                      <div class="col-lg-3">
-                        
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">00:00 - 02:00</li>
-                            <li class="list-group-item">02:00 - 04:00</li>
-                            <li class="list-group-item">04:00 - 06:00</li>
-                            <li class="list-group-item">06:00 - 08:00</li>
-                            <li class="list-group-item">08:00 - 10:00</li>
-                            <li class="list-group-item">10:00 - 12:00</li>
-                            <li class="list-group-item">12:00 - 13:00</li>
-                            <li class="list-group-item">13:00 - 15:00</li>
-                            <li class="list-group-item">15:00 - 17:00</li>
-                            <li class="list-group-item">17:00 - 19:00</li>
-                            <li class="list-group-item">19:00 - 21:00</li>
-                            <li class="list-group-item">21:00 - 23:00</li>
-                            <li class="list-group-item">23:00 - 00:00</li>
-                            
-                          </ul>
-
-                      </div>
-                      <div class="col-lg-9">
-                          
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <a href="#">xyn cabal podcast from lebanon </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">LA ONDA W/ BANANA LEAF BOY & XOLO - 01.04.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">hypermedium | dj set & live - 01.04.19</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">AWFUL RECORDS W/ DJ SPLASH - 26.06.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">SELF AND OTHER TO THE LIGHTHOUSE - 080419 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">HUDSON MOHAWKE - WXAXRXP MIX (WARP 30) - 22ND JUNE 2019 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">COIL RADIO W/ GAVSBORG, SOCIAL FOX & WARREN SINCLAIR - 04.12.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">FLOATING POINTS TAKEOVER W/ JAMIE XX, CARIBOU, MAFALDA, ELKKA, BEN UFO, LAYLA, MIDLAND, PEARSON SOUND, GE-OLOGY, SEIJI ONO & MORE </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">LEGENDS OF ALBANIAN SONG W/ GRUPI LAB - 10.10.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">COMO LA FLOR W/ JAZMIN - 21.01.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">KELMAN DURAN, FELIX HALL & FLORENTINO - 26.04.19 </a>
-                            </li> 
-                            <li class="list-group-item">
-                                <a href="#">DANIEL JOHNSTON: A TRIBUTE - 16TH SEPTEMBER 2019 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">THE DO!! YOU!!! BREAKFAST SHOW W/ CHARLIE BONES </a>
-                            </li>  
-                            
-                            
-                          </ul>
-                          
+                      <!--Podcast-->
+                      <div class="col-lg-12 b-bottom">
+                          <div class="row no-gutters">
+                              <div class="col-6 col-md-4">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">00:00 - 02:00</li>
+                                  </ul>
+                              </div>
+                          <div class="col-6 col-md-4">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a href="#">xyn cabal podcast from lebanon </a>
+                                </li>
+                              </ul>
+                          </div>
+                        </div>
                     </div>
+                    <!--Podcast-->
+                       <!--Podcast-->
+                       <div class="col-lg-12 b-bottom">
+                     
+                        <div class="row no-gutters">
+                            <div class="col-6 col-md-4">
+                              <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">00:00 - 02:00</li>
+
+                                </ul>
+                            </div>
+                        
+                        <div class="col-6 col-md-4">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">
+                                  <a href="#">xyn cabal podcast from lebanon </a>
+                              </li>
+
+                            </ul>
+
+                        </div>
+                      </div>
+                  </div>
+                  <!--Podcast-->
+                   <!--Podcast-->
+                   <div class="col-lg-12 b-bottom">
+                     
+                    <div class="row no-gutters">
+                        <div class="col-6 col-md-4">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">00:00 - 02:00</li>
+
+                            </ul>
+                        </div>
+                    
+                    <div class="col-6 col-md-4">
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                              <a href="#">xyn cabal podcast from lebanon </a>
+                          </li>
+
+                        </ul>
+
+                    </div>
+                  </div>
+              </div>
+              <!--Podcast-->
+               <!--Podcast-->
+               <div class="col-lg-12 b-bottom">
+                     
+                <div class="row no-gutters">
+                    <div class="col-6 col-md-4">
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">00:00 - 02:00</li>
+
+                        </ul>
+                    </div>
+                
+                <div class="col-6 col-md-4">
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                          <a href="#">xyn cabal podcast from lebanon </a>
+                      </li>
+
+                    </ul>
+
+                </div>
+              </div>
+          </div>
+          <!--Podcast-->
+           <!--Podcast-->
+           <div class="col-lg-12 b-bottom">
+                     
+            <div class="row no-gutters">
+                <div class="col-6 col-md-4">
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">00:00 - 02:00</li>
+
+                    </ul>
+                </div>
+            
+            <div class="col-6 col-md-4">
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                      <a href="#">xyn cabal podcast from lebanon </a>
+                  </li>
+
+                </ul>
+
+            </div>
+          </div>
+      </div>
+      <!--Podcast-->
+       <!--Podcast-->
+       <div class="col-lg-12 b-bottom">
+                     
+        <div class="row no-gutters">
+            <div class="col-6 col-md-4">
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">00:00 - 02:00</li>
+
+                </ul>
+            </div>
+        
+        <div class="col-6 col-md-4">
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                  <a href="#">xyn cabal podcast from lebanon </a>
+              </li>
+
+            </ul>
+
+        </div>
+      </div>
+  </div>
+  <!--Podcast-->
                   </div>
               </div>
             </div>
           </div>
           <!--day row END-->
+
           <!--day row-->
           <div class="row b-bottom">
 
             <a class="detach-button" data-toggle="collapse" href="#day-2" role="button" aria-expanded="false" aria-controls="day-2">
-                TUESDAY 2019-12-31
+                Tuesday <br/>
+                <span class="date">02 / 01 / 2019</span>
               </a>
              
             </p>
             <div class="collapse" id="day-2">
               <div class="schedule-container">
                   <div class="row no-gutters">
-                      <div class="col-lg-3">
-                        
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">00:00 - 02:00</li>
-                            <li class="list-group-item">02:00 - 04:00</li>
-                            <li class="list-group-item">04:00 - 06:00</li>
-                            <li class="list-group-item">06:00 - 08:00</li>
-                            <li class="list-group-item">08:00 - 10:00</li>
-                            <li class="list-group-item">10:00 - 12:00</li>
-                            <li class="list-group-item">12:00 - 13:00</li>
-                            <li class="list-group-item">13:00 - 15:00</li>
-                            <li class="list-group-item">15:00 - 17:00</li>
-                            <li class="list-group-item">17:00 - 19:00</li>
-                            <li class="list-group-item">19:00 - 21:00</li>
-                            <li class="list-group-item">21:00 - 23:00</li>
-                            <li class="list-group-item">23:00 - 00:00</li>
-                            
-                          </ul>
-
-                      </div>
-                      <div class="col-lg-9">
-                          
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <a href="#">xyn cabal podcast from lebanon </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">LA ONDA W/ BANANA LEAF BOY & XOLO - 01.04.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">hypermedium | dj set & live - 01.04.19</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">AWFUL RECORDS W/ DJ SPLASH - 26.06.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">SELF AND OTHER TO THE LIGHTHOUSE - 080419 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">HUDSON MOHAWKE - WXAXRXP MIX (WARP 30) - 22ND JUNE 2019 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">COIL RADIO W/ GAVSBORG, SOCIAL FOX & WARREN SINCLAIR - 04.12.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">FLOATING POINTS TAKEOVER W/ JAMIE XX, CARIBOU, MAFALDA, ELKKA, BEN UFO, LAYLA, MIDLAND, PEARSON SOUND, GE-OLOGY, SEIJI ONO & MORE </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">LEGENDS OF ALBANIAN SONG W/ GRUPI LAB - 10.10.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">COMO LA FLOR W/ JAZMIN - 21.01.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">KELMAN DURAN, FELIX HALL & FLORENTINO - 26.04.19 </a>
-                            </li> 
-                            <li class="list-group-item">
-                                <a href="#">DANIEL JOHNSTON: A TRIBUTE - 16TH SEPTEMBER 2019 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">THE DO!! YOU!!! BREAKFAST SHOW W/ CHARLIE BONES </a>
-                            </li>  
-                            
-                            
-                          </ul>
-                          
+                      <!--Podcast-->
+                      <div class="col-lg-12 b-bottom">
+                          <div class="row no-gutters">
+                              <div class="col-6 col-md-4">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">00:00 - 02:00</li>
+                                  </ul>
+                              </div>
+                          <div class="col-6 col-md-4">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a href="#">xyn cabal podcast from lebanon </a>
+                                </li>
+                              </ul>
+                          </div>
+                        </div>
                     </div>
+                    <!--Podcast-->
+                       <!--Podcast-->
+                       <div class="col-lg-12 b-bottom">
+                     
+                        <div class="row no-gutters">
+                            <div class="col-6 col-md-4">
+                              <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">00:00 - 02:00</li>
+
+                                </ul>
+                            </div>
+                        
+                        <div class="col-6 col-md-4">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">
+                                  <a href="#">xyn cabal podcast from lebanon </a>
+                              </li>
+
+                            </ul>
+
+                        </div>
+                      </div>
+                  </div>
+                  <!--Podcast-->
+                   <!--Podcast-->
+                   <div class="col-lg-12 b-bottom">
+                     
+                    <div class="row no-gutters">
+                        <div class="col-6 col-md-4">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">00:00 - 02:00</li>
+
+                            </ul>
+                        </div>
+                    
+                    <div class="col-6 col-md-4">
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                              <a href="#">xyn cabal podcast from lebanon </a>
+                          </li>
+
+                        </ul>
+
+                    </div>
+                  </div>
+              </div>
+              <!--Podcast-->
+               <!--Podcast-->
+               <div class="col-lg-12 b-bottom">
+                     
+                <div class="row no-gutters">
+                    <div class="col-6 col-md-4">
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">00:00 - 02:00</li>
+
+                        </ul>
+                    </div>
+                
+                <div class="col-6 col-md-4">
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                          <a href="#">xyn cabal podcast from lebanon </a>
+                      </li>
+
+                    </ul>
+
+                </div>
+              </div>
+          </div>
+          <!--Podcast-->
+           <!--Podcast-->
+           <div class="col-lg-12 b-bottom">
+                     
+            <div class="row no-gutters">
+                <div class="col-6 col-md-4">
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">00:00 - 02:00</li>
+
+                    </ul>
+                </div>
+            
+            <div class="col-6 col-md-4">
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                      <a href="#">xyn cabal podcast from lebanon </a>
+                  </li>
+
+                </ul>
+
+            </div>
+          </div>
+      </div>
+      <!--Podcast-->
+       <!--Podcast-->
+       <div class="col-lg-12 b-bottom">
+                     
+        <div class="row no-gutters">
+            <div class="col-6 col-md-4">
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">00:00 - 02:00</li>
+
+                </ul>
+            </div>
+        
+        <div class="col-6 col-md-4">
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                  <a href="#">xyn cabal podcast from lebanon </a>
+              </li>
+
+            </ul>
+
+        </div>
+      </div>
+  </div>
+  <!--Podcast-->
                   </div>
               </div>
             </div>
@@ -423,495 +545,903 @@ $("#sound-button").click( function (){
            <div class="row b-bottom">
 
             <a class="detach-button" data-toggle="collapse" href="#day-3" role="button" aria-expanded="false" aria-controls="day-3">
-                WEDNESDAY 2020-01-01
+                Wednesday <br/>
+                <span class="date">03 / 01 / 2019</span>
               </a>
              
             </p>
             <div class="collapse" id="day-3">
               <div class="schedule-container">
                   <div class="row no-gutters">
-                      <div class="col-lg-3">
-                        
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">00:00 - 02:00</li>
-                            <li class="list-group-item">02:00 - 04:00</li>
-                            <li class="list-group-item">04:00 - 06:00</li>
-                            <li class="list-group-item">06:00 - 08:00</li>
-                            <li class="list-group-item">08:00 - 10:00</li>
-                            <li class="list-group-item">10:00 - 12:00</li>
-                            <li class="list-group-item">12:00 - 13:00</li>
-                            <li class="list-group-item">13:00 - 15:00</li>
-                            <li class="list-group-item">15:00 - 17:00</li>
-                            <li class="list-group-item">17:00 - 19:00</li>
-                            <li class="list-group-item">19:00 - 21:00</li>
-                            <li class="list-group-item">21:00 - 23:00</li>
-                            <li class="list-group-item">23:00 - 00:00</li>
-                            
-                          </ul>
-
-                      </div>
-                      <div class="col-lg-9">
-                          
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <a href="#">xyn cabal podcast from lebanon </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">LA ONDA W/ BANANA LEAF BOY & XOLO - 01.04.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">hypermedium | dj set & live - 01.04.19</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">AWFUL RECORDS W/ DJ SPLASH - 26.06.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">SELF AND OTHER TO THE LIGHTHOUSE - 080419 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">HUDSON MOHAWKE - WXAXRXP MIX (WARP 30) - 22ND JUNE 2019 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">COIL RADIO W/ GAVSBORG, SOCIAL FOX & WARREN SINCLAIR - 04.12.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">FLOATING POINTS TAKEOVER W/ JAMIE XX, CARIBOU, MAFALDA, ELKKA, BEN UFO, LAYLA, MIDLAND, PEARSON SOUND, GE-OLOGY, SEIJI ONO & MORE </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">LEGENDS OF ALBANIAN SONG W/ GRUPI LAB - 10.10.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">COMO LA FLOR W/ JAZMIN - 21.01.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">KELMAN DURAN, FELIX HALL & FLORENTINO - 26.04.19 </a>
-                            </li> 
-                            <li class="list-group-item">
-                                <a href="#">DANIEL JOHNSTON: A TRIBUTE - 16TH SEPTEMBER 2019 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">THE DO!! YOU!!! BREAKFAST SHOW W/ CHARLIE BONES </a>
-                            </li>  
-                            
-                            
-                          </ul>
-                          
+                      <!--Podcast-->
+                      <div class="col-lg-12 b-bottom">
+                          <div class="row no-gutters">
+                              <div class="col-6 col-md-4">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">00:00 - 02:00</li>
+                                  </ul>
+                              </div>
+                          <div class="col-6 col-md-4">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a href="#">xyn cabal podcast from lebanon </a>
+                                </li>
+                              </ul>
+                          </div>
+                        </div>
                     </div>
+                    <!--Podcast-->
+                       <!--Podcast-->
+                       <div class="col-lg-12 b-bottom">
+                     
+                        <div class="row no-gutters">
+                            <div class="col-6 col-md-4">
+                              <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">00:00 - 02:00</li>
+
+                                </ul>
+                            </div>
+                        
+                        <div class="col-6 col-md-4">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">
+                                  <a href="#">xyn cabal podcast from lebanon </a>
+                              </li>
+
+                            </ul>
+
+                        </div>
+                      </div>
+                  </div>
+                  <!--Podcast-->
+                   <!--Podcast-->
+                   <div class="col-lg-12 b-bottom">
+                     
+                    <div class="row no-gutters">
+                        <div class="col-6 col-md-4">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">00:00 - 02:00</li>
+
+                            </ul>
+                        </div>
+                    
+                    <div class="col-6 col-md-4">
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                              <a href="#">xyn cabal podcast from lebanon </a>
+                          </li>
+
+                        </ul>
+
+                    </div>
+                  </div>
+              </div>
+              <!--Podcast-->
+               <!--Podcast-->
+               <div class="col-lg-12 b-bottom">
+                     
+                <div class="row no-gutters">
+                    <div class="col-6 col-md-4">
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">00:00 - 02:00</li>
+
+                        </ul>
+                    </div>
+                
+                <div class="col-6 col-md-4">
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                          <a href="#">xyn cabal podcast from lebanon </a>
+                      </li>
+
+                    </ul>
+
+                </div>
+              </div>
+          </div>
+          <!--Podcast-->
+           <!--Podcast-->
+           <div class="col-lg-12 b-bottom">
+                     
+            <div class="row no-gutters">
+                <div class="col-6 col-md-4">
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">00:00 - 02:00</li>
+
+                    </ul>
+                </div>
+            
+            <div class="col-6 col-md-4">
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                      <a href="#">xyn cabal podcast from lebanon </a>
+                  </li>
+
+                </ul>
+
+            </div>
+          </div>
+      </div>
+      <!--Podcast-->
+       <!--Podcast-->
+       <div class="col-lg-12 b-bottom">
+                     
+        <div class="row no-gutters">
+            <div class="col-6 col-md-4">
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">00:00 - 02:00</li>
+
+                </ul>
+            </div>
+        
+        <div class="col-6 col-md-4">
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                  <a href="#">xyn cabal podcast from lebanon </a>
+              </li>
+
+            </ul>
+
+        </div>
+      </div>
+  </div>
+  <!--Podcast-->
                   </div>
               </div>
             </div>
           </div>
           <!--day row END-->
+
            <!--day row-->
            <div class="row b-bottom">
 
             <a class="detach-button" data-toggle="collapse" href="#day-4" role="button" aria-expanded="false" aria-controls="day-4">
-                THURSDAY 2020-01-02
+                Thursday <br/>
+                <span class="date">04 / 01 / 2019</span>
               </a>
              
             </p>
             <div class="collapse" id="day-4">
               <div class="schedule-container">
                   <div class="row no-gutters">
-                      <div class="col-lg-3">
-                        
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">00:00 - 02:00</li>
-                            <li class="list-group-item">02:00 - 04:00</li>
-                            <li class="list-group-item">04:00 - 06:00</li>
-                            <li class="list-group-item">06:00 - 08:00</li>
-                            <li class="list-group-item">08:00 - 10:00</li>
-                            <li class="list-group-item">10:00 - 12:00</li>
-                            <li class="list-group-item">12:00 - 13:00</li>
-                            <li class="list-group-item">13:00 - 15:00</li>
-                            <li class="list-group-item">15:00 - 17:00</li>
-                            <li class="list-group-item">17:00 - 19:00</li>
-                            <li class="list-group-item">19:00 - 21:00</li>
-                            <li class="list-group-item">21:00 - 23:00</li>
-                            <li class="list-group-item">23:00 - 00:00</li>
-                            
-                          </ul>
-
-                      </div>
-                      <div class="col-lg-9">
-                          
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <a href="#">xyn cabal podcast from lebanon </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">LA ONDA W/ BANANA LEAF BOY & XOLO - 01.04.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">hypermedium | dj set & live - 01.04.19</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">AWFUL RECORDS W/ DJ SPLASH - 26.06.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">SELF AND OTHER TO THE LIGHTHOUSE - 080419 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">HUDSON MOHAWKE - WXAXRXP MIX (WARP 30) - 22ND JUNE 2019 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">COIL RADIO W/ GAVSBORG, SOCIAL FOX & WARREN SINCLAIR - 04.12.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">FLOATING POINTS TAKEOVER W/ JAMIE XX, CARIBOU, MAFALDA, ELKKA, BEN UFO, LAYLA, MIDLAND, PEARSON SOUND, GE-OLOGY, SEIJI ONO & MORE </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">LEGENDS OF ALBANIAN SONG W/ GRUPI LAB - 10.10.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">COMO LA FLOR W/ JAZMIN - 21.01.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">KELMAN DURAN, FELIX HALL & FLORENTINO - 26.04.19 </a>
-                            </li> 
-                            <li class="list-group-item">
-                                <a href="#">DANIEL JOHNSTON: A TRIBUTE - 16TH SEPTEMBER 2019 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">THE DO!! YOU!!! BREAKFAST SHOW W/ CHARLIE BONES </a>
-                            </li>  
-                            
-                            
-                          </ul>
-                          
+                      <!--Podcast-->
+                      <div class="col-lg-12 b-bottom">
+                          <div class="row no-gutters">
+                              <div class="col-6 col-md-4">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">00:00 - 02:00</li>
+                                  </ul>
+                              </div>
+                          <div class="col-6 col-md-4">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a href="#">xyn cabal podcast from lebanon </a>
+                                </li>
+                              </ul>
+                          </div>
+                        </div>
                     </div>
+                    <!--Podcast-->
+                       <!--Podcast-->
+                       <div class="col-lg-12 b-bottom">
+                     
+                        <div class="row no-gutters">
+                            <div class="col-6 col-md-4">
+                              <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">00:00 - 02:00</li>
+
+                                </ul>
+                            </div>
+                        
+                        <div class="col-6 col-md-4">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">
+                                  <a href="#">xyn cabal podcast from lebanon </a>
+                              </li>
+
+                            </ul>
+
+                        </div>
+                      </div>
+                  </div>
+                  <!--Podcast-->
+                   <!--Podcast-->
+                   <div class="col-lg-12 b-bottom">
+                     
+                    <div class="row no-gutters">
+                        <div class="col-6 col-md-4">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">00:00 - 02:00</li>
+
+                            </ul>
+                        </div>
+                    
+                    <div class="col-6 col-md-4">
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                              <a href="#">xyn cabal podcast from lebanon </a>
+                          </li>
+
+                        </ul>
+
+                    </div>
+                  </div>
+              </div>
+              <!--Podcast-->
+               <!--Podcast-->
+               <div class="col-lg-12 b-bottom">
+                     
+                <div class="row no-gutters">
+                    <div class="col-6 col-md-4">
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">00:00 - 02:00</li>
+
+                        </ul>
+                    </div>
+                
+                <div class="col-6 col-md-4">
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                          <a href="#">xyn cabal podcast from lebanon </a>
+                      </li>
+
+                    </ul>
+
+                </div>
+              </div>
+          </div>
+          <!--Podcast-->
+           <!--Podcast-->
+           <div class="col-lg-12 b-bottom">
+                     
+            <div class="row no-gutters">
+                <div class="col-6 col-md-4">
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">00:00 - 02:00</li>
+
+                    </ul>
+                </div>
+            
+            <div class="col-6 col-md-4">
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                      <a href="#">xyn cabal podcast from lebanon </a>
+                  </li>
+
+                </ul>
+
+            </div>
+          </div>
+      </div>
+      <!--Podcast-->
+       <!--Podcast-->
+       <div class="col-lg-12 b-bottom">
+                     
+        <div class="row no-gutters">
+            <div class="col-6 col-md-4">
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">00:00 - 02:00</li>
+
+                </ul>
+            </div>
+        
+        <div class="col-6 col-md-4">
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                  <a href="#">xyn cabal podcast from lebanon </a>
+              </li>
+
+            </ul>
+
+        </div>
+      </div>
+  </div>
+  <!--Podcast-->
                   </div>
               </div>
             </div>
           </div>
           <!--day row END-->
+
            <!--day row-->
            <div class="row b-bottom">
 
             <a class="detach-button" data-toggle="collapse" href="#day-5" role="button" aria-expanded="false" aria-controls="day-5">
-                FRIDAY 2020-01-03
+                Friday <br/>
+                <span class="date">05 / 01 / 2019</span>
               </a>
              
             </p>
             <div class="collapse" id="day-5">
               <div class="schedule-container">
                   <div class="row no-gutters">
-                      <div class="col-lg-3">
-                        
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">00:00 - 02:00</li>
-                            <li class="list-group-item">02:00 - 04:00</li>
-                            <li class="list-group-item">04:00 - 06:00</li>
-                            <li class="list-group-item">06:00 - 08:00</li>
-                            <li class="list-group-item">08:00 - 10:00</li>
-                            <li class="list-group-item">10:00 - 12:00</li>
-                            <li class="list-group-item">12:00 - 13:00</li>
-                            <li class="list-group-item">13:00 - 15:00</li>
-                            <li class="list-group-item">15:00 - 17:00</li>
-                            <li class="list-group-item">17:00 - 19:00</li>
-                            <li class="list-group-item">19:00 - 21:00</li>
-                            <li class="list-group-item">21:00 - 23:00</li>
-                            <li class="list-group-item">23:00 - 00:00</li>
-                            
-                          </ul>
-
-                      </div>
-                      <div class="col-lg-9">
-                          
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <a href="#">xyn cabal podcast from lebanon </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">LA ONDA W/ BANANA LEAF BOY & XOLO - 01.04.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">hypermedium | dj set & live - 01.04.19</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">AWFUL RECORDS W/ DJ SPLASH - 26.06.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">SELF AND OTHER TO THE LIGHTHOUSE - 080419 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">HUDSON MOHAWKE - WXAXRXP MIX (WARP 30) - 22ND JUNE 2019 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">COIL RADIO W/ GAVSBORG, SOCIAL FOX & WARREN SINCLAIR - 04.12.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">FLOATING POINTS TAKEOVER W/ JAMIE XX, CARIBOU, MAFALDA, ELKKA, BEN UFO, LAYLA, MIDLAND, PEARSON SOUND, GE-OLOGY, SEIJI ONO & MORE </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">LEGENDS OF ALBANIAN SONG W/ GRUPI LAB - 10.10.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">COMO LA FLOR W/ JAZMIN - 21.01.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">KELMAN DURAN, FELIX HALL & FLORENTINO - 26.04.19 </a>
-                            </li> 
-                            <li class="list-group-item">
-                                <a href="#">DANIEL JOHNSTON: A TRIBUTE - 16TH SEPTEMBER 2019 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">THE DO!! YOU!!! BREAKFAST SHOW W/ CHARLIE BONES </a>
-                            </li>  
-                            
-                            
-                          </ul>
-                          
+                      <!--Podcast-->
+                      <div class="col-lg-12 b-bottom">
+                          <div class="row no-gutters">
+                              <div class="col-6 col-md-4">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">00:00 - 02:00</li>
+                                  </ul>
+                              </div>
+                          <div class="col-6 col-md-4">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a href="#">xyn cabal podcast from lebanon </a>
+                                </li>
+                              </ul>
+                          </div>
+                        </div>
                     </div>
+                    <!--Podcast-->
+                       <!--Podcast-->
+                       <div class="col-lg-12 b-bottom">
+                     
+                        <div class="row no-gutters">
+                            <div class="col-6 col-md-4">
+                              <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">00:00 - 02:00</li>
+
+                                </ul>
+                            </div>
+                        
+                        <div class="col-6 col-md-4">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">
+                                  <a href="#">xyn cabal podcast from lebanon </a>
+                              </li>
+
+                            </ul>
+
+                        </div>
+                      </div>
+                  </div>
+                  <!--Podcast-->
+                   <!--Podcast-->
+                   <div class="col-lg-12 b-bottom">
+                     
+                    <div class="row no-gutters">
+                        <div class="col-6 col-md-4">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">00:00 - 02:00</li>
+
+                            </ul>
+                        </div>
+                    
+                    <div class="col-6 col-md-4">
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                              <a href="#">xyn cabal podcast from lebanon </a>
+                          </li>
+
+                        </ul>
+
+                    </div>
+                  </div>
+              </div>
+              <!--Podcast-->
+               <!--Podcast-->
+               <div class="col-lg-12 b-bottom">
+                     
+                <div class="row no-gutters">
+                    <div class="col-6 col-md-4">
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">00:00 - 02:00</li>
+
+                        </ul>
+                    </div>
+                
+                <div class="col-6 col-md-4">
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                          <a href="#">xyn cabal podcast from lebanon </a>
+                      </li>
+
+                    </ul>
+
+                </div>
+              </div>
+          </div>
+          <!--Podcast-->
+           <!--Podcast-->
+           <div class="col-lg-12 b-bottom">
+                     
+            <div class="row no-gutters">
+                <div class="col-6 col-md-4">
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">00:00 - 02:00</li>
+
+                    </ul>
+                </div>
+            
+            <div class="col-6 col-md-4">
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                      <a href="#">xyn cabal podcast from lebanon </a>
+                  </li>
+
+                </ul>
+
+            </div>
+          </div>
+      </div>
+      <!--Podcast-->
+       <!--Podcast-->
+       <div class="col-lg-12 b-bottom">
+                     
+        <div class="row no-gutters">
+            <div class="col-6 col-md-4">
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">00:00 - 02:00</li>
+
+                </ul>
+            </div>
+        
+        <div class="col-6 col-md-4">
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                  <a href="#">xyn cabal podcast from lebanon </a>
+              </li>
+
+            </ul>
+
+        </div>
+      </div>
+  </div>
+  <!--Podcast-->
                   </div>
               </div>
             </div>
           </div>
           <!--day row END-->
+
+
            <!--day row-->
            <div class="row b-bottom">
 
             <a class="detach-button" data-toggle="collapse" href="#day-6" role="button" aria-expanded="false" aria-controls="day-6">
-                SATURDAY 2020-01-04
+                Saturday <br/>
+                <span class="date">06 / 01 / 2019</span>
               </a>
              
             </p>
             <div class="collapse" id="day-6">
               <div class="schedule-container">
                   <div class="row no-gutters">
-                      <div class="col-lg-3">
-                        
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">00:00 - 02:00</li>
-                            <li class="list-group-item">02:00 - 04:00</li>
-                            <li class="list-group-item">04:00 - 06:00</li>
-                            <li class="list-group-item">06:00 - 08:00</li>
-                            <li class="list-group-item">08:00 - 10:00</li>
-                            <li class="list-group-item">10:00 - 12:00</li>
-                            <li class="list-group-item">12:00 - 13:00</li>
-                            <li class="list-group-item">13:00 - 15:00</li>
-                            <li class="list-group-item">15:00 - 17:00</li>
-                            <li class="list-group-item">17:00 - 19:00</li>
-                            <li class="list-group-item">19:00 - 21:00</li>
-                            <li class="list-group-item">21:00 - 23:00</li>
-                            <li class="list-group-item">23:00 - 00:00</li>
-                            
-                          </ul>
-
-                      </div>
-                      <div class="col-lg-9">
-                          
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <a href="#">xyn cabal podcast from lebanon </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">LA ONDA W/ BANANA LEAF BOY & XOLO - 01.04.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">hypermedium | dj set & live - 01.04.19</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">AWFUL RECORDS W/ DJ SPLASH - 26.06.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">SELF AND OTHER TO THE LIGHTHOUSE - 080419 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">HUDSON MOHAWKE - WXAXRXP MIX (WARP 30) - 22ND JUNE 2019 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">COIL RADIO W/ GAVSBORG, SOCIAL FOX & WARREN SINCLAIR - 04.12.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">FLOATING POINTS TAKEOVER W/ JAMIE XX, CARIBOU, MAFALDA, ELKKA, BEN UFO, LAYLA, MIDLAND, PEARSON SOUND, GE-OLOGY, SEIJI ONO & MORE </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">LEGENDS OF ALBANIAN SONG W/ GRUPI LAB - 10.10.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">COMO LA FLOR W/ JAZMIN - 21.01.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">KELMAN DURAN, FELIX HALL & FLORENTINO - 26.04.19 </a>
-                            </li> 
-                            <li class="list-group-item">
-                                <a href="#">DANIEL JOHNSTON: A TRIBUTE - 16TH SEPTEMBER 2019 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">THE DO!! YOU!!! BREAKFAST SHOW W/ CHARLIE BONES </a>
-                            </li>  
-                            
-                            
-                          </ul>
-                          
+                      <!--Podcast-->
+                      <div class="col-lg-12 b-bottom">
+                          <div class="row no-gutters">
+                              <div class="col-6 col-md-4">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">00:00 - 02:00</li>
+                                  </ul>
+                              </div>
+                          <div class="col-6 col-md-4">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a href="#">xyn cabal podcast from lebanon </a>
+                                </li>
+                              </ul>
+                          </div>
+                        </div>
                     </div>
+                    <!--Podcast-->
+                       <!--Podcast-->
+                       <div class="col-lg-12 b-bottom">
+                     
+                        <div class="row no-gutters">
+                            <div class="col-6 col-md-4">
+                              <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">00:00 - 02:00</li>
+
+                                </ul>
+                            </div>
+                        
+                        <div class="col-6 col-md-4">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">
+                                  <a href="#">xyn cabal podcast from lebanon </a>
+                              </li>
+
+                            </ul>
+
+                        </div>
+                      </div>
+                  </div>
+                  <!--Podcast-->
+                   <!--Podcast-->
+                   <div class="col-lg-12 b-bottom">
+                     
+                    <div class="row no-gutters">
+                        <div class="col-6 col-md-4">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">00:00 - 02:00</li>
+
+                            </ul>
+                        </div>
+                    
+                    <div class="col-6 col-md-4">
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                              <a href="#">xyn cabal podcast from lebanon </a>
+                          </li>
+
+                        </ul>
+
+                    </div>
+                  </div>
+              </div>
+              <!--Podcast-->
+               <!--Podcast-->
+               <div class="col-lg-12 b-bottom">
+                     
+                <div class="row no-gutters">
+                    <div class="col-6 col-md-4">
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">00:00 - 02:00</li>
+
+                        </ul>
+                    </div>
+                
+                <div class="col-6 col-md-4">
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                          <a href="#">xyn cabal podcast from lebanon </a>
+                      </li>
+
+                    </ul>
+
+                </div>
+              </div>
+          </div>
+          <!--Podcast-->
+           <!--Podcast-->
+           <div class="col-lg-12 b-bottom">
+                     
+            <div class="row no-gutters">
+                <div class="col-6 col-md-4">
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">00:00 - 02:00</li>
+
+                    </ul>
+                </div>
+            
+            <div class="col-6 col-md-4">
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                      <a href="#">xyn cabal podcast from lebanon </a>
+                  </li>
+
+                </ul>
+
+            </div>
+          </div>
+      </div>
+      <!--Podcast-->
+       <!--Podcast-->
+       <div class="col-lg-12 b-bottom">
+                     
+        <div class="row no-gutters">
+            <div class="col-6 col-md-4">
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">00:00 - 02:00</li>
+
+                </ul>
+            </div>
+        
+        <div class="col-6 col-md-4">
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                  <a href="#">xyn cabal podcast from lebanon </a>
+              </li>
+
+            </ul>
+
+        </div>
+      </div>
+  </div>
+  <!--Podcast-->
                   </div>
               </div>
             </div>
           </div>
           <!--day row END-->
+
            <!--day row-->
            <div class="row b-bottom">
 
             <a class="detach-button" data-toggle="collapse" href="#day-7" role="button" aria-expanded="false" aria-controls="day-7">
-                SUNDAY 2020-01-05
+                Sunday <br/>
+                <span class="date">07 / 01 / 2019</span>
               </a>
              
             </p>
             <div class="collapse" id="day-7">
               <div class="schedule-container">
                   <div class="row no-gutters">
-                      <div class="col-lg-3">
-                        
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">00:00 - 02:00</li>
-                            <li class="list-group-item">02:00 - 04:00</li>
-                            <li class="list-group-item">04:00 - 06:00</li>
-                            <li class="list-group-item">06:00 - 08:00</li>
-                            <li class="list-group-item">08:00 - 10:00</li>
-                            <li class="list-group-item">10:00 - 12:00</li>
-                            <li class="list-group-item">12:00 - 13:00</li>
-                            <li class="list-group-item">13:00 - 15:00</li>
-                            <li class="list-group-item">15:00 - 17:00</li>
-                            <li class="list-group-item">17:00 - 19:00</li>
-                            <li class="list-group-item">19:00 - 21:00</li>
-                            <li class="list-group-item">21:00 - 23:00</li>
-                            <li class="list-group-item">23:00 - 00:00</li>
-                            
-                          </ul>
-
-                      </div>
-                      <div class="col-lg-9">
-                          
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <a href="#">xyn cabal podcast from lebanon </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">LA ONDA W/ BANANA LEAF BOY & XOLO - 01.04.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">hypermedium | dj set & live - 01.04.19</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">AWFUL RECORDS W/ DJ SPLASH - 26.06.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">SELF AND OTHER TO THE LIGHTHOUSE - 080419 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">HUDSON MOHAWKE - WXAXRXP MIX (WARP 30) - 22ND JUNE 2019 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">COIL RADIO W/ GAVSBORG, SOCIAL FOX & WARREN SINCLAIR - 04.12.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">FLOATING POINTS TAKEOVER W/ JAMIE XX, CARIBOU, MAFALDA, ELKKA, BEN UFO, LAYLA, MIDLAND, PEARSON SOUND, GE-OLOGY, SEIJI ONO & MORE </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">LEGENDS OF ALBANIAN SONG W/ GRUPI LAB - 10.10.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">COMO LA FLOR W/ JAZMIN - 21.01.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">KELMAN DURAN, FELIX HALL & FLORENTINO - 26.04.19 </a>
-                            </li> 
-                            <li class="list-group-item">
-                                <a href="#">DANIEL JOHNSTON: A TRIBUTE - 16TH SEPTEMBER 2019 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">THE DO!! YOU!!! BREAKFAST SHOW W/ CHARLIE BONES </a>
-                            </li>  
-                            
-                            
-                          </ul>
-                          
+                      <!--Podcast-->
+                      <div class="col-lg-12 b-bottom">
+                          <div class="row no-gutters">
+                              <div class="col-6 col-md-4">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">00:00 - 02:00</li>
+                                  </ul>
+                              </div>
+                          <div class="col-6 col-md-4">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a href="#">xyn cabal podcast from lebanon </a>
+                                </li>
+                              </ul>
+                          </div>
+                        </div>
                     </div>
+                    <!--Podcast-->
+                       <!--Podcast-->
+                       <div class="col-lg-12 b-bottom">
+                     
+                        <div class="row no-gutters">
+                            <div class="col-6 col-md-4">
+                              <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">00:00 - 02:00</li>
+
+                                </ul>
+                            </div>
+                        
+                        <div class="col-6 col-md-4">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">
+                                  <a href="#">xyn cabal podcast from lebanon </a>
+                              </li>
+
+                            </ul>
+
+                        </div>
+                      </div>
+                  </div>
+                  <!--Podcast-->
+                   <!--Podcast-->
+                   <div class="col-lg-12 b-bottom">
+                     
+                    <div class="row no-gutters">
+                        <div class="col-6 col-md-4">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">00:00 - 02:00</li>
+
+                            </ul>
+                        </div>
+                    
+                    <div class="col-6 col-md-4">
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                              <a href="#">xyn cabal podcast from lebanon </a>
+                          </li>
+
+                        </ul>
+
+                    </div>
+                  </div>
+              </div>
+              <!--Podcast-->
+               <!--Podcast-->
+               <div class="col-lg-12 b-bottom">
+                     
+                <div class="row no-gutters">
+                    <div class="col-6 col-md-4">
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">00:00 - 02:00</li>
+
+                        </ul>
+                    </div>
+                
+                <div class="col-6 col-md-4">
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                          <a href="#">xyn cabal podcast from lebanon </a>
+                      </li>
+
+                    </ul>
+
+                </div>
+              </div>
+          </div>
+          <!--Podcast-->
+           <!--Podcast-->
+           <div class="col-lg-12 b-bottom">
+                     
+            <div class="row no-gutters">
+                <div class="col-6 col-md-4">
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">00:00 - 02:00</li>
+
+                    </ul>
+                </div>
+            
+            <div class="col-6 col-md-4">
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                      <a href="#">xyn cabal podcast from lebanon </a>
+                  </li>
+
+                </ul>
+
+            </div>
+          </div>
+      </div>
+      <!--Podcast-->
+       <!--Podcast-->
+       <div class="col-lg-12 b-bottom">
+                     
+        <div class="row no-gutters">
+            <div class="col-6 col-md-4">
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">00:00 - 02:00</li>
+
+                </ul>
+            </div>
+        
+        <div class="col-6 col-md-4">
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                  <a href="#">xyn cabal podcast from lebanon </a>
+              </li>
+
+            </ul>
+
+        </div>
+      </div>
+  </div>
+  <!--Podcast-->
                   </div>
               </div>
             </div>
           </div>
           <!--day row END-->
+
            <!--day row-->
            <div class="row b-bottom">
 
             <a class="detach-button" data-toggle="collapse" href="#day-8" role="button" aria-expanded="false" aria-controls="day-8">
-                MONDAY 2020-01-06
+                Monday <br/>
+                <span class="date">08 / 01 / 2019</span>
               </a>
              
             </p>
             <div class="collapse" id="day-8">
               <div class="schedule-container">
                   <div class="row no-gutters">
-                      <div class="col-lg-3">
-                        
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">00:00 - 02:00</li>
-                            <li class="list-group-item">02:00 - 04:00</li>
-                            <li class="list-group-item">04:00 - 06:00</li>
-                            <li class="list-group-item">06:00 - 08:00</li>
-                            <li class="list-group-item">08:00 - 10:00</li>
-                            <li class="list-group-item">10:00 - 12:00</li>
-                            <li class="list-group-item">12:00 - 13:00</li>
-                            <li class="list-group-item">13:00 - 15:00</li>
-                            <li class="list-group-item">15:00 - 17:00</li>
-                            <li class="list-group-item">17:00 - 19:00</li>
-                            <li class="list-group-item">19:00 - 21:00</li>
-                            <li class="list-group-item">21:00 - 23:00</li>
-                            <li class="list-group-item">23:00 - 00:00</li>
-                            
-                          </ul>
-
-                      </div>
-                      <div class="col-lg-9">
-                          
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <a href="#">xyn cabal podcast from lebanon </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">LA ONDA W/ BANANA LEAF BOY & XOLO - 01.04.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">hypermedium | dj set & live - 01.04.19</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">AWFUL RECORDS W/ DJ SPLASH - 26.06.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">SELF AND OTHER TO THE LIGHTHOUSE - 080419 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">HUDSON MOHAWKE - WXAXRXP MIX (WARP 30) - 22ND JUNE 2019 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">COIL RADIO W/ GAVSBORG, SOCIAL FOX & WARREN SINCLAIR - 04.12.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">FLOATING POINTS TAKEOVER W/ JAMIE XX, CARIBOU, MAFALDA, ELKKA, BEN UFO, LAYLA, MIDLAND, PEARSON SOUND, GE-OLOGY, SEIJI ONO & MORE </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">LEGENDS OF ALBANIAN SONG W/ GRUPI LAB - 10.10.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">COMO LA FLOR W/ JAZMIN - 21.01.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">KELMAN DURAN, FELIX HALL & FLORENTINO - 26.04.19 </a>
-                            </li> 
-                            <li class="list-group-item">
-                                <a href="#">DANIEL JOHNSTON: A TRIBUTE - 16TH SEPTEMBER 2019 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">THE DO!! YOU!!! BREAKFAST SHOW W/ CHARLIE BONES </a>
-                            </li>  
-                            
-                            
-                          </ul>
-                          
+                      <!--Podcast-->
+                      <div class="col-lg-12 b-bottom">
+                          <div class="row no-gutters">
+                              <div class="col-6 col-md-4">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">00:00 - 02:00</li>
+                                  </ul>
+                              </div>
+                          <div class="col-6 col-md-4">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a href="#">xyn cabal podcast from lebanon </a>
+                                </li>
+                              </ul>
+                          </div>
+                        </div>
                     </div>
+                    <!--Podcast-->
+                       <!--Podcast-->
+                       <div class="col-lg-12 b-bottom">
+                     
+                        <div class="row no-gutters">
+                            <div class="col-6 col-md-4">
+                              <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">00:00 - 02:00</li>
+
+                                </ul>
+                            </div>
+                        
+                        <div class="col-6 col-md-4">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">
+                                  <a href="#">xyn cabal podcast from lebanon </a>
+                              </li>
+
+                            </ul>
+
+                        </div>
+                      </div>
+                  </div>
+                  <!--Podcast-->
+                   <!--Podcast-->
+                   <div class="col-lg-12 b-bottom">
+                     
+                    <div class="row no-gutters">
+                        <div class="col-6 col-md-4">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">00:00 - 02:00</li>
+
+                            </ul>
+                        </div>
+                    
+                    <div class="col-6 col-md-4">
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                              <a href="#">xyn cabal podcast from lebanon </a>
+                          </li>
+
+                        </ul>
+
+                    </div>
+                  </div>
+              </div>
+              <!--Podcast-->
+               <!--Podcast-->
+               <div class="col-lg-12 b-bottom">
+                     
+                <div class="row no-gutters">
+                    <div class="col-6 col-md-4">
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">00:00 - 02:00</li>
+
+                        </ul>
+                    </div>
+                
+                <div class="col-6 col-md-4">
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                          <a href="#">xyn cabal podcast from lebanon </a>
+                      </li>
+
+                    </ul>
+
+                </div>
+              </div>
+          </div>
+          <!--Podcast-->
+           <!--Podcast-->
+           <div class="col-lg-12 b-bottom">
+                     
+            <div class="row no-gutters">
+                <div class="col-6 col-md-4">
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">00:00 - 02:00</li>
+
+                    </ul>
+                </div>
+            
+            <div class="col-6 col-md-4">
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                      <a href="#">xyn cabal podcast from lebanon </a>
+                  </li>
+
+                </ul>
+
+            </div>
+          </div>
+      </div>
+      <!--Podcast-->
+       <!--Podcast-->
+       <div class="col-lg-12 b-bottom">
+                     
+        <div class="row no-gutters">
+            <div class="col-6 col-md-4">
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">00:00 - 02:00</li>
+
+                </ul>
+            </div>
+        
+        <div class="col-6 col-md-4">
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                  <a href="#">xyn cabal podcast from lebanon </a>
+              </li>
+
+            </ul>
+
+        </div>
+      </div>
+  </div>
+  <!--Podcast-->
                   </div>
               </div>
             </div>
@@ -921,172 +1451,308 @@ $("#sound-button").click( function (){
            <div class="row b-bottom">
 
             <a class="detach-button" data-toggle="collapse" href="#day-9" role="button" aria-expanded="false" aria-controls="day-9">
-                TUESDAY 2019-12-31
+                Tuesday <br/>
+                <span class="date">09 / 01 / 2019</span>
               </a>
              
             </p>
             <div class="collapse" id="day-9">
               <div class="schedule-container">
                   <div class="row no-gutters">
-                      <div class="col-lg-3">
-                        
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">00:00 - 02:00</li>
-                            <li class="list-group-item">02:00 - 04:00</li>
-                            <li class="list-group-item">04:00 - 06:00</li>
-                            <li class="list-group-item">06:00 - 08:00</li>
-                            <li class="list-group-item">08:00 - 10:00</li>
-                            <li class="list-group-item">10:00 - 12:00</li>
-                            <li class="list-group-item">12:00 - 13:00</li>
-                            <li class="list-group-item">13:00 - 15:00</li>
-                            <li class="list-group-item">15:00 - 17:00</li>
-                            <li class="list-group-item">17:00 - 19:00</li>
-                            <li class="list-group-item">19:00 - 21:00</li>
-                            <li class="list-group-item">21:00 - 23:00</li>
-                            <li class="list-group-item">23:00 - 00:00</li>
-                            
-                          </ul>
-
-                      </div>
-                      <div class="col-lg-9">
-                          
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <a href="#">xyn cabal podcast from lebanon </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">LA ONDA W/ BANANA LEAF BOY & XOLO - 01.04.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">hypermedium | dj set & live - 01.04.19</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">AWFUL RECORDS W/ DJ SPLASH - 26.06.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">SELF AND OTHER TO THE LIGHTHOUSE - 080419 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">HUDSON MOHAWKE - WXAXRXP MIX (WARP 30) - 22ND JUNE 2019 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">COIL RADIO W/ GAVSBORG, SOCIAL FOX & WARREN SINCLAIR - 04.12.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">FLOATING POINTS TAKEOVER W/ JAMIE XX, CARIBOU, MAFALDA, ELKKA, BEN UFO, LAYLA, MIDLAND, PEARSON SOUND, GE-OLOGY, SEIJI ONO & MORE </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">LEGENDS OF ALBANIAN SONG W/ GRUPI LAB - 10.10.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">COMO LA FLOR W/ JAZMIN - 21.01.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">KELMAN DURAN, FELIX HALL & FLORENTINO - 26.04.19 </a>
-                            </li> 
-                            <li class="list-group-item">
-                                <a href="#">DANIEL JOHNSTON: A TRIBUTE - 16TH SEPTEMBER 2019 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">THE DO!! YOU!!! BREAKFAST SHOW W/ CHARLIE BONES </a>
-                            </li>  
-                            
-                            
-                          </ul>
-                          
+                      <!--Podcast-->
+                      <div class="col-lg-12 b-bottom">
+                          <div class="row no-gutters">
+                              <div class="col-6 col-md-4">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">00:00 - 02:00</li>
+                                  </ul>
+                              </div>
+                          <div class="col-6 col-md-4">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a href="#">xyn cabal podcast from lebanon </a>
+                                </li>
+                              </ul>
+                          </div>
+                        </div>
                     </div>
+                    <!--Podcast-->
+                       <!--Podcast-->
+                       <div class="col-lg-12 b-bottom">
+                     
+                        <div class="row no-gutters">
+                            <div class="col-6 col-md-4">
+                              <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">00:00 - 02:00</li>
+
+                                </ul>
+                            </div>
+                        
+                        <div class="col-6 col-md-4">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">
+                                  <a href="#">xyn cabal podcast from lebanon </a>
+                              </li>
+
+                            </ul>
+
+                        </div>
+                      </div>
+                  </div>
+                  <!--Podcast-->
+                   <!--Podcast-->
+                   <div class="col-lg-12 b-bottom">
+                     
+                    <div class="row no-gutters">
+                        <div class="col-6 col-md-4">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">00:00 - 02:00</li>
+
+                            </ul>
+                        </div>
+                    
+                    <div class="col-6 col-md-4">
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                              <a href="#">xyn cabal podcast from lebanon </a>
+                          </li>
+
+                        </ul>
+
+                    </div>
+                  </div>
+              </div>
+              <!--Podcast-->
+               <!--Podcast-->
+               <div class="col-lg-12 b-bottom">
+                     
+                <div class="row no-gutters">
+                    <div class="col-6 col-md-4">
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">00:00 - 02:00</li>
+
+                        </ul>
+                    </div>
+                
+                <div class="col-6 col-md-4">
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                          <a href="#">xyn cabal podcast from lebanon </a>
+                      </li>
+
+                    </ul>
+
+                </div>
+              </div>
+          </div>
+          <!--Podcast-->
+           <!--Podcast-->
+           <div class="col-lg-12 b-bottom">
+                     
+            <div class="row no-gutters">
+                <div class="col-6 col-md-4">
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">00:00 - 02:00</li>
+
+                    </ul>
+                </div>
+            
+            <div class="col-6 col-md-4">
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                      <a href="#">xyn cabal podcast from lebanon </a>
+                  </li>
+
+                </ul>
+
+            </div>
+          </div>
+      </div>
+      <!--Podcast-->
+       <!--Podcast-->
+       <div class="col-lg-12 b-bottom">
+                     
+        <div class="row no-gutters">
+            <div class="col-6 col-md-4">
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">00:00 - 02:00</li>
+
+                </ul>
+            </div>
+        
+        <div class="col-6 col-md-4">
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                  <a href="#">xyn cabal podcast from lebanon </a>
+              </li>
+
+            </ul>
+
+        </div>
+      </div>
+  </div>
+  <!--Podcast-->
                   </div>
               </div>
             </div>
           </div>
           <!--day row END-->
+
            <!--day row-->
            <div class="row b-bottom">
 
             <a class="detach-button" data-toggle="collapse" href="#day-10" role="button" aria-expanded="false" aria-controls="day-10">
-                WEDNESDAY 2020-01-01
+                Wednesday <br/>
+                <span class="date">10 / 01 / 2019</span>
               </a>
              
             </p>
             <div class="collapse" id="day-10">
               <div class="schedule-container">
                   <div class="row no-gutters">
-                      <div class="col-lg-3">
-                        
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">00:00 - 02:00</li>
-                            <li class="list-group-item">02:00 - 04:00</li>
-                            <li class="list-group-item">04:00 - 06:00</li>
-                            <li class="list-group-item">06:00 - 08:00</li>
-                            <li class="list-group-item">08:00 - 10:00</li>
-                            <li class="list-group-item">10:00 - 12:00</li>
-                            <li class="list-group-item">12:00 - 13:00</li>
-                            <li class="list-group-item">13:00 - 15:00</li>
-                            <li class="list-group-item">15:00 - 17:00</li>
-                            <li class="list-group-item">17:00 - 19:00</li>
-                            <li class="list-group-item">19:00 - 21:00</li>
-                            <li class="list-group-item">21:00 - 23:00</li>
-                            <li class="list-group-item">23:00 - 00:00</li>
-                            
-                          </ul>
-
-                      </div>
-                      <div class="col-lg-9">
-                          
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <a href="#">xyn cabal podcast from lebanon </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">LA ONDA W/ BANANA LEAF BOY & XOLO - 01.04.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">hypermedium | dj set & live - 01.04.19</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">AWFUL RECORDS W/ DJ SPLASH - 26.06.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">SELF AND OTHER TO THE LIGHTHOUSE - 080419 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">HUDSON MOHAWKE - WXAXRXP MIX (WARP 30) - 22ND JUNE 2019 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">COIL RADIO W/ GAVSBORG, SOCIAL FOX & WARREN SINCLAIR - 04.12.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">FLOATING POINTS TAKEOVER W/ JAMIE XX, CARIBOU, MAFALDA, ELKKA, BEN UFO, LAYLA, MIDLAND, PEARSON SOUND, GE-OLOGY, SEIJI ONO & MORE </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">LEGENDS OF ALBANIAN SONG W/ GRUPI LAB - 10.10.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">COMO LA FLOR W/ JAZMIN - 21.01.19 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">KELMAN DURAN, FELIX HALL & FLORENTINO - 26.04.19 </a>
-                            </li> 
-                            <li class="list-group-item">
-                                <a href="#">DANIEL JOHNSTON: A TRIBUTE - 16TH SEPTEMBER 2019 </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">THE DO!! YOU!!! BREAKFAST SHOW W/ CHARLIE BONES </a>
-                            </li>  
-                            
-                            
-                          </ul>
-                          
+                      <!--Podcast-->
+                      <div class="col-lg-12 b-bottom">
+                          <div class="row no-gutters">
+                              <div class="col-6 col-md-4">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">00:00 - 02:00</li>
+                                  </ul>
+                              </div>
+                          <div class="col-6 col-md-4">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a href="#">xyn cabal podcast from lebanon </a>
+                                </li>
+                              </ul>
+                          </div>
+                        </div>
                     </div>
+                    <!--Podcast-->
+                       <!--Podcast-->
+                       <div class="col-lg-12 b-bottom">
+                     
+                        <div class="row no-gutters">
+                            <div class="col-6 col-md-4">
+                              <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">00:00 - 02:00</li>
+
+                                </ul>
+                            </div>
+                        
+                        <div class="col-6 col-md-4">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">
+                                  <a href="#">xyn cabal podcast from lebanon </a>
+                              </li>
+
+                            </ul>
+
+                        </div>
+                      </div>
+                  </div>
+                  <!--Podcast-->
+                   <!--Podcast-->
+                   <div class="col-lg-12 b-bottom">
+                     
+                    <div class="row no-gutters">
+                        <div class="col-6 col-md-4">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">00:00 - 02:00</li>
+
+                            </ul>
+                        </div>
+                    
+                    <div class="col-6 col-md-4">
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                              <a href="#">xyn cabal podcast from lebanon </a>
+                          </li>
+
+                        </ul>
+
+                    </div>
+                  </div>
+              </div>
+              <!--Podcast-->
+               <!--Podcast-->
+               <div class="col-lg-12 b-bottom">
+                     
+                <div class="row no-gutters">
+                    <div class="col-6 col-md-4">
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">00:00 - 02:00</li>
+
+                        </ul>
+                    </div>
+                
+                <div class="col-6 col-md-4">
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                          <a href="#">xyn cabal podcast from lebanon </a>
+                      </li>
+
+                    </ul>
+
+                </div>
+              </div>
+          </div>
+          <!--Podcast-->
+           <!--Podcast-->
+           <div class="col-lg-12 b-bottom">
+                     
+            <div class="row no-gutters">
+                <div class="col-6 col-md-4">
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">00:00 - 02:00</li>
+
+                    </ul>
+                </div>
+            
+            <div class="col-6 col-md-4">
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                      <a href="#">xyn cabal podcast from lebanon </a>
+                  </li>
+
+                </ul>
+
+            </div>
+          </div>
+      </div>
+      <!--Podcast-->
+       <!--Podcast-->
+       <div class="col-lg-12 b-bottom">
+                     
+        <div class="row no-gutters">
+            <div class="col-6 col-md-4">
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">00:00 - 02:00</li>
+
+                </ul>
+            </div>
+        
+        <div class="col-6 col-md-4">
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                  <a href="#">xyn cabal podcast from lebanon </a>
+              </li>
+
+            </ul>
+
+        </div>
+      </div>
+  </div>
+  <!--Podcast-->
                   </div>
               </div>
             </div>
           </div>
           <!--day row END-->
           
+          
+          
        </div>
-       </div>
-    </div>
+       
        <!--Schedule Collapse end-->
     </div>
       

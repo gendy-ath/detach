@@ -53,8 +53,11 @@ li.nav-item {
 .player{
     margin-right: 0px;
     margin-left: 0px;
-    padding: 0.5rem 1rem;
+    /*padding: 0.5rem 1rem;*/
    
+}
+.player img {
+    width: 25px;
 }
 
 .player-schedule{
@@ -72,7 +75,13 @@ li.nav-item {
     color:black;
 }
 .info-live{
-    padding: 0.5rem 1rem;
+    /*padding: 0.5rem 1rem;*/
+    font-family: 'HelveticaNeueBold';
+    font-size:1em;
+    padding: 30px !important;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
 }
 span.live-now {
     padding: 0.5rem 1rem;
@@ -104,6 +113,16 @@ span.live-now {
     -o-background-size: cover;
     background-size: cover;
   }
+
+  .banner-category{
+    height: 50vh;
+    min-height: 350px;
+    background: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
   .carousel-indicators li{
       width:100% !important;
       background-color: black !important;
@@ -119,7 +138,7 @@ span.live-now {
 
 h5{
     font-family: 'HelveticaNeueBold';
-    background-color: white;
+    background-color: transparent;
     color:black;
     font-size:8rem !important; 
   
@@ -130,11 +149,16 @@ h5{
  a.detach-button {
     color: black;
     padding-left: 30px;
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    font-family: 'HelveticaNeueBold';
     
    
     width:100%;
+}
+span.date {
+    font-family: 'HelveticaNeue';
+    font-size:24px !important;
 }
 .schedule-container{
     width:100vw;
@@ -244,6 +268,7 @@ div#schedule {
 }
 .show-page{
     overflow: hidden;
+    margin-bottom:60px;
 
 }
 .track-list-content{
@@ -286,12 +311,8 @@ input[type="range"] {
     border-right:1px solid black;
   }
   .track-list-master{
-      margin-top:20vh;
-      margin-bottom:5vh;
+     
       
-      height:75vh;
-      overflow-y: auto;
-      overflow-x: hidden;
       border-top:1px solid black;
   }
   .track-list-master ul{
@@ -338,7 +359,7 @@ input[type="range"] {
     }
    }
    .mixcloud-player{
-       position: absolute;;
+       position: fixed;;
        z-index: 1060;
        width:100%;
        bottom:-5px;
@@ -349,8 +370,7 @@ input[type="range"] {
        font-size: 4rem !important;
    }
    .tracklist-header{
-       position: fixed;
-       top:100pxh;
+       position: relative;
        z-index: 1060;
    }
    .category-page{
@@ -367,4 +387,37 @@ input[type="range"] {
     font-family: 'HelveticaNeueBold';
     font-size: 2em;
     margin-bottom: 2px;;
+}
+button#live-button {
+    padding: 15px !important;
+    /* margin: 1em; */
+    border-right: 1px solid black;
+}
+button#sound-button {
+    padding: 15px !important;
+    /* margin: 1em; */
+    border-right: 1px solid black;
+}
+.sticky-offset {
+    top: 90px !important;
+}
+.headline{
+    background:white;
+}
+.category-text {
+    padding: 6rem;
+}
+.show-text {
+    padding: 6rem;
+    height:100vh;
+    overflow-y: auto;
+}
+.shows-section-banner {
+    font-size: 3em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-left: 15px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: 'HelveticaNeueBold';
 }

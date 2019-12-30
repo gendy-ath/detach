@@ -84,104 +84,121 @@ $("#sound-button").click( function (){
   </script>
   
 
-    </head>
-    <body>
-        <figure>
-            
-            <audio id="player"
-                controls
-                src="/audio/audio.mp3">
-                    Your browser does not support the
-                    <code>audio</code> element.
-            </audio>
-        </figure>
+</head>
+<body>
+    <figure>
+        
+        <audio id="player"
+            controls
+            src="/audio/audio.mp3">
+                Your browser does not support the
+                <code>audio</code> element.
+        </audio>
+    </figure>
 
-        <div class="fixed-top light-mode">
-        <nav class="navbar navbar-expand-lg navbar-light detach-nav">
-            <a class="navbar-brand" href="#">Detached</a>
-            <button class="burger-button d-xl-none d-lg-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <img src="icons/menu.svg"/>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="nav-container-mobile">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">artists <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">shows</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">schedule</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">about</a>
-                </li>
-              </ul>
-            </div>
-           
+    <div class="fixed-top light-mode">
+    <nav class="navbar navbar-expand-lg navbar-light detach-nav">
+        <a class="navbar-brand" href="#">Detached</a>
+        <button class="burger-button d-xl-none d-lg-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="icons/menu.svg"/>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="nav-container-mobile">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">artists <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">shows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">about</a>
+            </li>
+          </ul>
         </div>
-            <div class="d-none d-lg-block d-xl-block">
-            <form class="form-inline my-2 my-lg-0 ">
-                <button class="btn" type="submit"><img src="icons/search.svg"/></button>
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+       
+    </div>
+        <div class="d-none d-lg-block d-xl-block">
+        <form class="form-inline my-2 my-lg-0 ">
+            <button class="btn" type="submit"><img src="icons/search.svg"/></button>
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            
+          </form>
+        </div>
+       
+      </nav>
+      <div class="radio-container">
+          
+          <div class="row no-gutters ">
+              <div class="col-lg-12  b-top">
+               
                 
-              </form>
-            </div>
-            <div class="player d-none d-lg-block d-xl-block">
-                <button id="sound-button" class="stream-button">
-                <img class="sound-icon" src="icons/volume.svg"/>
-                <img class="mute-icon invisible" src="icons/mute.svg"/>
-                
-                </button>
-                <div class="slider-volume">
-                    <input type="range" min="0" max="10" value="7" step="1">
+                <div class="player" >
+                    <!--<span class="live-now">live now</span>-->
+                    <button id="live-button" class="stream-button">
+                    <img class="play-icon" src="icons/play.svg"/>
+                    <img class="stop-icon invisible" src="icons/pause.svg"/>
+                  </button>
+                  <button id="sound-button" class="stream-button">
+                    <img class="sound-icon" src="icons/volume.svg"/>
+                    <img class="mute-icon invisible" src="icons/mute.svg"/>
+                    
+                    </button>
+                    <span class="info-live">ryuichi sakamoto - wxaxrxp mix athens special</span>
+
                 </div>
                 
-            </div>
-          </nav>
-          <div class="radio-container">
-              
-              <div class="row no-gutters ">
-                  <div class="col-lg-6  b-top">
-                   
-                    
-                    <div class="player" >
-                        <!--<span class="live-now">live now</span>-->
-                        <button id="live-button" class="stream-button">
-                        <img class="play-icon" src="icons/play.svg"/>
-                        <img class="stop-icon invisible" src="icons/pause.svg"/>
-                      </button>
-                      <span class="info-live">ryuichi sakamoto - wxaxrxp mix athens special</span></div>
-                      
-                    </div>
-                   
-                  
-
-                  <div class="col-lg-6 b-top">
-                    <a data-toggle="collapse" href="#schedule" role="button" aria-expanded="false" aria-controls="schedule">
-                    <div class="player-schedule">
-                        
-                        radio schedule
-                        <span class="expand-icon"><img src="icons/expand.svg"/></span>
-                    
-                    
-                    </div>
-                </a>
-                  
-                    
+                
                 </div>
                
+              
 
-              </div>
+           
+
           </div>
-        </div>
+      </div>
+    </div>
         <!--Category page-->
 
        <div class="category-page">
-           
+           <div class="row">
+               <div class="col-lg-12">
+               <div class="banner-category" style="background-image: url('img/lorenzo.jpg')">
+               </div>
+               </div>
+              
+               <div class="col-lg-12">
+                   <div class="category-text">
+                    <h5>Artist Name</h5>
+                       <p>Fans will know that a highlight of Lorenzo Senni’s live show is his joyous, high-energy dancing. The Italian producer, best known for his emotive, drum-free reflections on classic trance sounds, puts his skills down to summers spent dancing at bars for money around the tender age of 15. “It’s not what you think,” he laughs – turns out, it was not uncommon for kids from his town to head to seaside bars in the daytime, put on whatever surf brand’s clothes were being promoted, and throw shapes on the podium until night time, when the adult dancers showed up.
+
+                        How a teenage, straight-edge hardcore and punk lover ended up doing this isn’t clear, but it speaks to Senni’s lifelong love of performing, from drumming in bands as a youth to filling up clubs today. For some, he suggests, live shows and touring have become a necessary evil in today’s industry to guarantee some income. For him, the joy remains: the only challenge has been retaining that live element.
+                        
+                        “When I started to work with synths like the JP-8000 [a trance workhorse responsible for numerous classics], my style became a lot more exact and precise,” he says. “There’s not much room to mess about. And so this has made it a little tricky to strike a balance between playing live, and automating things to ensure they sound a certain way.”</p>
+                        <p>This wasn’t the case when Senni started in electronic music, when messiness and unpredictability were at the heart of his sound. As a musicology student drawn to computer music, early shows were largely improvised off a laptop. It was later during his studies that he began toying with the idea of repurposing trance, and to harness its high drama and emotion. In what he calls ‘early experiments’, Senni would play now near-infamous sets built entirely of trance build-ups which never gave crowds the satisfaction of the drop.
+
+                            The results, he says, were sometimes pretty shocking: “People would get excited at first, but in time, they’d get angry, especially if they’d walked in without realising what’s going on. Sometimes they’d come to the booth and scream at me to fuck off. It proved I was working in the territory I wanted to. It proved how our brains have a strong expectation of this type of music.”
+                            
+                            Since then, the likes of Senni, Nina Kraviz, Evian Christ and more have effectively rehabilitated the genre — but in his case, not by design: “When I started, my colleagues at university would warn me not to use the word trance in public. It was such a vile reference. That doesn’t seem to be the case today, but if that’s anything to do with me, it’s purely unintentional. I was never standing up in defence of trance. I don’t want to make trance great again.”</p>
+                            <p>Senni’s last EP, The Shape of Trance to Come, recently spawned a remix EP – The Shape of RemixXxes to Come. Collecting together three very different artists, it underlines just how widely approaches to remixing can vary between scenes. Stingray delivers a signature electro rework, ditching “XAllegroX”’s feverish Euro-drama in favour of gritty Detroit menace. Florian Hecker tries something more academic: he uses algorithms to hack and mangle Lorenzo’s melodies, splitting samples over the separate stereo channels for a fractured 12-minute listen. Things converge halfway through, and something close to the original track surfaces, before the centre breaks and things descend again into abstract territory.
+
+                                The Tale of Us remix of “The Shape of Trance to Come” stays truest to the source material, layering a beat beneath clips of Senni’s melancholic synths, made thicker with big-room reverb. Whilst certainly effective, it underlines the fact that Senni’s largely beat-less music is extremely easy to play with. But far from worrying about second-rate remixes and poor treatments, Senni says he enjoys the ease with which others have played with his tracks so far.</p>
+
+                   </div>
+               </div>
+           </div>
+           <div class="row">
+               <div class="col-lg-12">
+                   <div class="shows-section-banner">
+                       Podcasts
+                   </div>
+               </div>
+           </div>
                <div class="row no-gutters">
-                   <div class="col-lg-3">
+                   <div class="col-lg-4">
                       <div class="grid-image" style="background-image: url('img/lorenzo.jpg')">
                         
                    </div>
@@ -191,7 +208,7 @@ $("#sound-button").click( function (){
                 </div>
                    
                </div>
-               <div class="col-lg-3">
+               <div class="col-lg-4">
                 <div class="grid-image" style="background-image: url('img/slide-2.jpg')">
                   
              </div>
@@ -201,7 +218,7 @@ $("#sound-button").click( function (){
           </div>
              
          </div>
-         <div class="col-lg-3">
+         <div class="col-lg-4">
             <div class="grid-image" style="background-image: url('img/slide-3.jpg')">
               
          </div>
@@ -211,7 +228,7 @@ $("#sound-button").click( function (){
       </div>
          
      </div>
-     <div class="col-lg-3">
+     <div class="col-lg-4">
         <div class="grid-image" style="background-image: url('img/slide-4.jpg')">
           
      </div>
@@ -221,7 +238,7 @@ $("#sound-button").click( function (){
   </div>
      
  </div>
- <div class="col-lg-3">
+ <div class="col-lg-4">
     <div class="grid-image" style="background-image: url('img/slide-5.jpg')">
       
  </div>
