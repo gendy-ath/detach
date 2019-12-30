@@ -239,7 +239,7 @@ button:focus {
 
 div#schedule {
     position: fixed;
-    z-index: 1020;
+    z-index: 1030;
     top: 0;
   
 }
@@ -248,6 +248,7 @@ div#schedule {
     width: 100vw;
     background: white;
     height: 100vh;
+    overflow-y: auto;
     margin-top: 84px;
     overflow-y: auto;
 
